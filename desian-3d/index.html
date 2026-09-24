@@ -326,19 +326,31 @@ function renderUnit(u, st) {
   }
 
   /* 2-1. 발코니 — 외부 유리 커튼월로 막힌 실내형(서비스) 발코니 */
-  const BD = 1.5, BY = -T - BD;
+  const BD = 1.5, BY = -T - BD, XB = -T - BD;
   if (st.balcony && hasWin) {
-    box(0, W, BY, -T, -0.12, 0, { fy: "#cfcbc4", fx: "#c2bdb5", top: "#dcdde0" });
+    const corner = !!u.corner;          // 코너 호실: 발코니가 두 면을 ㄱ자로 감쌈
+    const x0 = corner ? XB : 0;
+    if (corner) {
+      box(XB, -T, -T, D, -0.12, 0, { fy: "#cfcbc4", fx: "#c2bdb5", top: "#dcdde0" });
+      for (let y = 0.6; y < D; y += 0.6) line([[XB, y, 0.002], [-T, y, 0.002]], { stroke: "#c9cacd", sw: 0.8 });
+      poly(rectX(BY, D, 0, H, XB), { fill: "#c7dde8", op: 0.6, stroke: "#6f8a98", sw: 1.4 });
+      const m = Math.max(2, Math.round((D - BY) / 0.9));
+      for (let k = 1; k < m; k++) { const y = BY + (D - BY) * k / m; line([[XB, y, 0], [XB, y, H]], { stroke: "#6f8a98", sw: 1.2 }); }
+      line([[XB, BY, 1.1], [XB, D, 1.1]], { stroke: "#6f8a98", sw: 1.2 });
+      box(XB - T, XB, BY - T, D, H - 0.001, H, { fy: COL.wallTop, fx: COL.wallTop, top: COL.wallTop });
+      box(XB - T, -T, D, D + T, 0, H, { fy: COL.wallEnd, fx: COL.wallEnd, top: COL.wallTop });
+    }
+    box(x0, W, BY, -T, -0.12, 0, { fy: "#cfcbc4", fx: "#c2bdb5", top: "#dcdde0" });
     for (let x = 0.6; x < W; x += 0.6) line([[x, -T, 0.002], [x, BY, 0.002]], { stroke: "#c9cacd", sw: 0.8 });
     for (let y = -T - 0.6; y > BY; y -= 0.6) line([[0, y, 0.002], [W, y, 0.002]], { stroke: "#c9cacd", sw: 0.8 });
     // 외부 커튼월(바닥~천장 유리)
-    poly(rectY(0, W, 0, H, BY), { fill: "#c7dde8", op: 0.6, stroke: "#6f8a98", sw: 1.4 });
-    const n = Math.max(2, Math.round(W / 0.9));
-    for (let k = 1; k < n; k++) line([[W * k / n, BY, 0], [W * k / n, BY, H]], { stroke: "#6f8a98", sw: 1.2 });
-    line([[0, BY, 1.1], [W, BY, 1.1]], { stroke: "#6f8a98", sw: 1.2 });
+    poly(rectY(x0, W, 0, H, BY), { fill: "#c7dde8", op: 0.6, stroke: "#6f8a98", sw: 1.4 });
+    const n = Math.max(2, Math.round((W - x0) / 0.9));
+    for (let k = 1; k < n; k++) { const x = x0 + (W - x0) * k / n; line([[x, BY, 0], [x, BY, H]], { stroke: "#6f8a98", sw: 1.2 }); }
+    line([[x0, BY, 1.1], [W, BY, 1.1]], { stroke: "#6f8a98", sw: 1.2 });
     // 양옆 벽
-    box(-T, 0, BY - T, -T, 0, H, { fy: COL.wallEnd, fx: COL.wallX, top: COL.wallTop });
-    box(0, W, BY - T, BY, H - 0.001, H, { fy: COL.wallTop, fx: COL.wallTop, top: COL.wallTop });
+    if (!corner) box(-T, 0, BY - T, -T, 0, H, { fy: COL.wallEnd, fx: COL.wallX, top: COL.wallTop });
+    box(x0 - (corner ? T : 0), W, BY - T, BY, H - 0.001, H, { fy: COL.wallTop, fx: COL.wallTop, top: COL.wallTop });
     box(W, W + T, BY - T, -T, 0, H, { fy: COL.wallEnd, fx: COL.wallEnd, top: COL.wallTop });
   }
 
@@ -385,7 +397,7 @@ function renderUnit(u, st) {
   }
 
   /* 3. 뒷벽: x=0(좌) — 코너면 측창 */
-  const sideWin = u.corner ? [0.25, Math.max(1.5, Math.min(D - 2.4, D * 0.72))] : null;
+  const sideWin = u.corner ? [0.25, Math.max(1.5, D - 1.6)] : null;
   const leftFace = rectX(0, D, 0, H, 0);
   if (sideWin) path([leftFace, rectX(sideWin[0], sideWin[1], win.sill, win.head, 0)], { fill: COL.wallX, stroke: COL.edge });
   else poly(leftFace, { fill: COL.wallX, stroke: COL.edge });
