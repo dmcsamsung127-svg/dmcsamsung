@@ -71,6 +71,7 @@
 
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); gap: 20px; }
   .card { display: grid; gap: 8px; }
+  .cap { font-size: 14px; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
   .toggles { display: flex; gap: 6px; flex-wrap: wrap; }
   .toggles button {
     font: inherit; font-size: 13px; padding: 3px 10px; border-radius: 6px; cursor: pointer;
@@ -123,7 +124,7 @@
 
   /* 내보내기 모드(PNG 렌더용) */
   body.export { background: #ffffff; padding: 0; }
-  body.export header.top, body.export .toggles { display: none; }
+  body.export header.top, body.export .toggles, body.export .cap { display: none; }
   body.export .wrap { max-width: none; gap: 0; }
   body.export .grid { grid-template-columns: max-content; gap: 24px; padding: 12px; }
   body.export .sheet { width: 1080px; }
@@ -159,7 +160,7 @@
 <div class="wrap">
   <header class="top">
     <h1>DMC 플렉스 데시앙 · 호실 3D 개념도</h1>
-    <p>매물장 기준 전용면적·향·옵션으로 그린 등각 개념도입니다. 실측 치수가 있는 FB102·FB103만 치수를 표기했고, 나머지 호실의 가로·세로 비율은 전용면적에서 추정했습니다. 카드 아래 버튼으로 싱크대·블라인드를 켜고 끌 수 있습니다.</p>
+    <p>네이버 등록용으로 글씨 없이 도면과 치수만 담은 개념도입니다. 카드 위 호실 표기는 구분용이며 이미지에는 들어가지 않습니다. FB102·103 외 치수는 전용면적 기준 추정치(약)입니다.</p>
     <div class="filters" role="group" aria-label="동 필터">
       <button type="button" data-f="all" aria-pressed="true">전체</button>
       <button type="button" data-f="KA" aria-pressed="false">A동 (KA)</button>
@@ -187,9 +188,9 @@ const UNITS = [
   { id: "KA604",  area: 18.62, dir: "동향", sink: null,  blind: null },
   { id: "KA605",  area: 18.62, dir: "동향", sink: null,  blind: null },
   { id: "KA611",  area: 14.21, dir: "남향", sink: null,  blind: null, terrace: true,
-    note: "단독 테라스 · 6층 중앙공원 층" },
-  { id: "FB232",  area: 16.38, dir: null,   sink: null,  blind: null, drive: true },
-  { id: "FB204",  area: 17.64, dir: null,   sink: null,  blind: null, drive: true },
+    note: "단독 테라스" },
+  { id: "FB232", height: 3.0,  area: 16.38, dir: null,   sink: null,  blind: null, drive: true },
+  { id: "FB204", height: 3.0,  area: 17.64, dir: null,   sink: null,  blind: null, drive: true },
   { id: "KB1226", area: 18.62, dir: "동향", sink: true,  blind: true,
     note: "연계 호실 가능" },
   { id: "F441",   area: 10.67, dir: "남향", sink: null,  blind: null, drive: true },
@@ -214,7 +215,7 @@ const UNITS = [
   { id: "KA1906", area: 39.56, dir: "남동향 코너", corner: ["남", "동"], sink: null, blind: null },
   { id: "KB1710", area: 10.67, dir: "서향",  sink: null, blind: null },
   { id: "KB1630", area: 13.97, dir: "남향",  sink: null, blind: null },
-  { id: "FB111",  area: 18.75, dir: null,    sink: null, blind: null, drive: true },
+  { id: "FB111", height: 3.0,  area: 18.75, dir: null,    sink: null, blind: null, drive: true },
   { id: "KB611",  area: 18.62, dir: "동향",  sink: null, blind: null },
   { id: "KB1135", area: 25,    dir: null,    sink: null, blind: null },
 ];
@@ -264,7 +265,10 @@ function renderUnit(u, st) {
   const T = 0.18;            // 벽 두께
   const HC = 0.22;           // 전면 절단벽 높이
   const rooms = (u.rooms || [{ id: u.id, area: u.area }]).map(r => {
-    const dm = r.w ? { w: r.w, d: r.d } : estimateDims(r.area, u.corner);
+    const fbDepth = { "2": 9.5, "1": 13.5 }[u.id.startsWith("FB") ? u.id[2] : ""];
+    const dm = r.w ? { w: r.w, d: r.d }
+      : fbDepth ? { w: (r.area * M2_PER_PY) / fbDepth, d: fbDepth }
+      : estimateDims(r.area, u.corner);
     return { ...r, ...dm };
   });
   let ox = 0;
@@ -550,183 +554,22 @@ function renderUnit(u, st) {
   return `<svg class="drawing" viewBox="0 0 ${VW} ${VH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc((u.title || u.id) + " 3D 개념도")}">${out.join("")}</svg>`;
 }
 
-/* ───────── 지하 드라이브인(FB) — 창 없는 박스 + 양개문 + 빨간 치수 ───────── */
-// FB2층은 참고 도면(12.74평, 가로 약 4.0 × 세로 약 9.5m)과 같은 깊이 9.5m,
-// FB1층은 FB102·103 실측 깊이 13.5m를 기준으로 가로를 전용면적에서 역산
-const FB_DEPTH = { "2": 9.5, "1": 13.5 };
-
-function fbRooms(u) {
-  const src = u.rooms || [{ id: u.id, area: u.area }];
-  return src.map(r => {
-    if (r.w) return { ...r, known: true };
-    const d = FB_DEPTH[u.id[2]] || 9.5;
-    return { ...r, w: (r.area * M2_PER_PY) / d, d, known: false };
-  });
-}
-
-function renderFB(u) {
-  const VW = 1000, VH = 640;
-  const rooms = fbRooms(u);
-  const H = u.height || 3.0, T = 0.28;
-  const L = Math.max(...rooms.map(r => r.d));           // 세로(깊이) — 화면 오른쪽 아래로
-  let oy = 0; rooms.forEach(r => { r.oy = oy; oy += r.w; });
-  const W = oy;                                         // 가로 — 화면 왼쪽 아래로
-  const ex = [0.67, 0.74], ey = [-0.8, 0.59], ez = [0, -0.52];
-  const pr = ([x, y, z]) => [x * ex[0] + y * ey[0] + z * ez[0], x * ex[1] + y * ey[1] + z * ez[1]];
-
-  const ops = [];
-  const poly = (pts, fill, stroke = "#3a3f47", sw = 1.2) => ops.push({ t: "poly", pts, fill, stroke, sw });
-  const rings = (rs, fill) => ops.push({ t: "path", rs, fill });
-
-  // 1. 바닥
-  rooms.forEach(r => poly([[0, r.oy, 0], [L, r.oy, 0], [L, r.oy + r.w, 0], [0, r.oy + r.w, 0]], "#d8dadf", "#9ca0a8", 1));
-  // 2. 안쪽 벽면(뒤쪽 두 벽 + 호실 사이 벽)
-  poly([[0, 0, 0], [0, W, 0], [0, W, H], [0, 0, H]], "#f3f3f1");
-  poly([[0, 0, 0], [L, 0, 0], [L, 0, H], [0, 0, H]], "#e9eaea");
-  rooms.slice(1).forEach(r => poly([[0, r.oy + T / 2, 0], [L, r.oy + T / 2, 0], [L, r.oy + T / 2, H], [0, r.oy + T / 2, H]], "#e9eaea"));
-  // 3. 바깥 벽면(앞쪽 긴 벽, 출입문 쪽 짧은 벽)
-  poly([[-T, W + T, 0], [L + T, W + T, 0], [L + T, W + T, H], [-T, W + T, H]], "#fbfbfa");
-  poly([[L + T, -T, 0], [L + T, W + T, 0], [L + T, W + T, H], [L + T, -T, H]], "#efefed");
-  // 4. 벽 윗면(굵은 검정 테두리)
-  const top = [[[-T, -T, H], [L + T, -T, H], [L + T, W + T, H], [-T, W + T, H]]];
-  rooms.forEach((r, i) => {
-    const a = r.oy + (i ? T / 2 : 0), b = r.oy + r.w - (i < rooms.length - 1 ? T / 2 : 0);
-    top.push([[0, a, H], [L, a, H], [L, b, H], [0, b, H]]);
-  });
-  rings(top, "#16181c");
-  // 5. 양개 출입문 — 호실마다 하나
-  const dw = u.door || 1.8, dh = u.doorH || 2.1, X = L + T + 0.005;
-  rooms.forEach(r => {
-    const c = r.oy + r.w / 2, a = c - dw / 2, b = c + dw / 2;
-    poly([[X, a - 0.08, 0], [X, b + 0.08, 0], [X, b + 0.08, dh + 0.08], [X, a - 0.08, dh + 0.08]], "#3f4650", "#2b3037");
-    [[a, c], [c, b]].forEach(([p, q]) => {
-      poly([[X, p + 0.03, 0.02], [X, q - 0.03, 0.02], [X, q - 0.03, dh], [X, p + 0.03, dh]], "#6b7480", "#2b3037", 1);
-      poly([[X, p + 0.18, dh * 0.5], [X, q - 0.18, dh * 0.5], [X, q - 0.18, dh - 0.2], [X, p + 0.18, dh - 0.2]], "#b8c2cc", "#2b3037", 0.8);
-    });
-    ops.push({ t: "seg", pts: [[X, c - 0.12, 0.95], [X, c - 0.12, 1.2]], stroke: "#d6dbe0", sw: 2.4 });
-    ops.push({ t: "seg", pts: [[X, c + 0.12, 0.95], [X, c + 0.12, 1.2]], stroke: "#d6dbe0", sw: 2.4 });
-  });
-
-  // 6. 빨간 치수
-  const RED = "#e11d2a", fmt = v => (Math.round(v * 10) / 10).toFixed(1);
-  const off = 1.1;
-  ops.push({ t: "dim", a: [0, W + T + off, 0], b: [L, W + T + off, 0],
-    label: `세로 ${rooms.every(r => r.known) ? "" : "약 "}${fmt(L)}m`, side: "left" });
-  rooms.forEach(r => ops.push({ t: "dim", a: [L + T + off, r.oy, 0], b: [L + T + off, r.oy + r.w, 0],
-    label: (rooms.length > 1 ? `${r.id} ` : "") + `가로 ${r.known ? r.w.toFixed(2) : "약 " + fmt(r.w)}m`, side: "below" }));
-  ops.push({ t: "hdim", a: [-T, W + T + 0.35, 0], b: [-T, W + T + 0.35, H], label: `${fmt(H)}m` });
-
-  // ── 화면 맞춤 ──
-  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
-  const grow = p => { const [a, b] = pr(p); x0 = Math.min(x0, a); x1 = Math.max(x1, a); y0 = Math.min(y0, b); y1 = Math.max(y1, b); };
-  ops.forEach(o => (o.pts || (o.rs ? o.rs.flat() : [o.a, o.b])).forEach(grow));
-  const padL = 230, padR = 150, padT = 40, padB = 90;
-  const k = Math.min((VW - padL - padR) / (x1 - x0), (VH - padT - padB) / (y1 - y0));
-  const ox = padL + ((VW - padL - padR) - (x1 - x0) * k) / 2 - x0 * k;
-  const oyS = padT + ((VH - padT - padB) - (y1 - y0) * k) / 2 - y0 * k;
-  const S = p => { const [a, b] = pr(p); return [a * k + ox, b * k + oyS]; };
-  const P = arr => arr.map(p => S(p).map(v => v.toFixed(1)).join(",")).join(" ");
-  const FONT = `font-family="Noto Sans KR, sans-serif" font-weight="800"`;
-  const arrow = (tip, from) => {
-    const dx = tip[0] - from[0], dy = tip[1] - from[1], n = Math.hypot(dx, dy) || 1, ux = dx / n, uy = dy / n;
-    const s = 16, w = 7;
-    return `<polyline points="${tip[0] - ux * s - uy * w},${tip[1] - uy * s + ux * w} ${tip[0]},${tip[1]} ${tip[0] - ux * s + uy * w},${tip[1] - uy * s - ux * w}" fill="none" stroke="${RED}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>`;
-  };
-  const out = [];
-  ops.forEach(o => {
-    if (o.t === "poly") out.push(`<polygon points="${P(o.pts)}" fill="${o.fill}" stroke="${o.stroke}" stroke-width="${o.sw}" stroke-linejoin="round"/>`);
-    else if (o.t === "path") out.push(`<path fill-rule="evenodd" fill="${o.fill}" d="${o.rs.map(r => "M" + r.map(p => S(p).join(",")).join("L") + "Z").join("")}"/>`);
-    else if (o.t === "seg") out.push(`<polyline points="${P(o.pts)}" stroke="${o.stroke}" stroke-width="${o.sw}" stroke-linecap="round" fill="none"/>`);
-    else if (o.t === "dim" || o.t === "hdim") {
-      const A = S(o.a), B = S(o.b);
-      out.push(`<line x1="${A[0]}" y1="${A[1]}" x2="${B[0]}" y2="${B[1]}" stroke="${RED}" stroke-width="3.2"/>`);
-      out.push(arrow(A, B), arrow(B, A));
-      if (o.t === "dim") {  // 치수보조선
-        const n = [B[1] - A[1], -(B[0] - A[0])], m = Math.hypot(...n), e = [n[0] / m * 14, n[1] / m * 14];
-        [A, B].forEach(Q => out.push(`<line x1="${Q[0] - e[0]}" y1="${Q[1] - e[1]}" x2="${Q[0] + e[0]}" y2="${Q[1] + e[1]}" stroke="${RED}" stroke-width="2"/>`));
-      }
-      const M = [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2];
-      if (o.t === "hdim") {
-        out.push(`<text x="${M[0] - 22}" y="${M[1] - 16}" font-size="22" fill="${RED}" text-anchor="end" ${FONT}>마감고</text>`);
-        out.push(`<text x="${M[0] - 22}" y="${M[1] + 20}" font-size="34" fill="${RED}" text-anchor="end" ${FONT}>${o.label}</text>`);
-      } else if (o.side === "left") {
-        out.push(`<text x="${M[0] - 26}" y="${M[1] + 12}" font-size="30" fill="${RED}" text-anchor="end" ${FONT}>${o.label}</text>`);
-      } else {
-        out.push(`<text x="${M[0] + 10}" y="${M[1] + 42}" font-size="${rooms.length > 1 ? 24 : 30}" fill="${RED}" ${FONT}>${o.label}</text>`);
-      }
-    }
-  });
-  return `<svg class="drawing" viewBox="0 0 ${VW} ${VH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${u.title || u.id} 3D 개념도">${out.join("")}</svg>`;
-}
-
-function fbSheetHTML(u) {
-  const loc = locate(u.id);
-  const rooms = fbRooms(u);
-  const m2 = r => (r.m2 || r.area * M2_PER_PY).toFixed(2);
-  const areaLine = rooms.length > 1
-    ? `전용면적 ${rooms.map(r => `${r.id} ${m2(r)}m²`).join(" + ")} (합 약 ${u.area}평)`
-    : `전용면적 ${m2(rooms[0])}m² (약 ${u.area}평)`;
-  const bullets = [areaLine, "호실 앞 주차 가능", "차량 접근이 쉬운 드라이브인 구조", ...(u.fbBullets || [])];
-  return `
-    <article class="card" data-id="${u.id}" data-g="F">
-      <div class="sheet fb" id="sheet-${u.id}">
-        <div class="fb-left">
-          <div class="t1">DMC 플렉스 데시앙</div>
-          <div class="t2">${u.title || u.id}호 · 드라이브인 호실</div>
-          <div class="t3">${loc.floor} · 3D 개념도 (참고용)</div>
-          <ul>${bullets.map(b => `<li>${b}</li>`).join("")}</ul>
-          <div class="fb-brand">DMC 삼성 <span>부동산</span><div>02-354-2299</div></div>
-        </div>
-        <div class="fb-right">${renderFB(u)}</div>
-        <div class="fb-foot">상기 치수는 ${rooms.every(r => r.known) ? "매물장 실측 기준" : "전용면적 기준 추정치"}로, 현장 실측값과 차이가 있을 수 있습니다.</div>
-      </div>
-    </article>`;
-}
-
-/* ───────── 카드 ───────── */
+/* ───────── 카드 ─────────
+   PNG(.sheet)에는 도면과 치수만 — 호실명·층·동·면적 글씨는 넣지 않음.
+   카드 위 캡션은 갤러리에서 구분용이며 내보내기 이미지에는 포함되지 않음. */
 const state = {};
 UNITS.forEach(u => { state[u.id] = { sink: !!u.sink, blind: !!u.blind, curtain: !!u.curtain }; });
 
-function optCell(label, v, onTxt) {
-  if (v == null) return `<div class="spec"><dt>${label}</dt><dd>—</dd></div>`;
-  return `<div class="spec"><dt>${label}</dt><dd class="${v ? "on" : "off"}">${v ? (onTxt || "있음") : "없음"}</dd></div>`;
-}
-
 function cardHTML(u) {
-  if (u.id.startsWith("FB")) return fbSheetHTML(u);
-  const st = state[u.id];
-  const loc = locate(u.id);
-  const m2 = (u.area * M2_PER_PY).toFixed(2);
-  const sinkV = u.sink === null && !st.sink ? null : st.sink;
-  const blindV = u.blind === null && !st.blind ? null : st.blind;
-  const badges = [];
-  if (u.drive) badges.push(`<span class="badge brass">드라이브인</span>`);
-  if (u.corner) badges.push(`<span class="badge">코너 양창</span>`);
-  if (u.terrace) badges.push(`<span class="badge">단독 테라스</span>`);
-  if (u.rooms) badges.push(`<span class="badge">${u.rooms.length}개 호실 연속</span>`);
-  if (st.curtain) badges.push(`<span class="badge">쉬폰 커튼</span>`);
-  const title = (u.title || u.id);
+  const st = { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !u.terrace };
+  const cap = [u.title || u.id, `${u.area}평`, u.dir].filter(Boolean).join(" · ");
   return `
     <article class="card" data-id="${u.id}" data-g="${u.id.startsWith("F") ? "F" : u.id.slice(0, 2)}">
-      <div class="sheet" id="sheet-${u.id}">
-        <div class="sheet-head">
-          <div class="no">${title}<small>호</small></div>
-          <div class="where"><b>DMC 플렉스 데시앙</b>${loc.dong} · ${loc.floor}</div>
-        </div>
-        <div class="badges">${badges.join("")}</div>
-        ${renderUnit(u, st)}
-        ${u.note ? `<div class="note">${u.note}</div>` : ""}
-        <dl class="specs" style="margin:0;margin-top:10px">
-          <div class="spec"><dt>전용면적</dt><dd>${u.area}평 <span style="font-weight:500;font-size:.72em">(${m2}㎡)</span></dd></div>
-          <div class="spec"><dt>향</dt><dd>${u.dir || "—"}</dd></div>
-          ${optCell("싱크대", sinkV, u.sinkLabel ? u.sinkLabel + " 있음" : "있음")}
-          ${optCell("블라인드", blindV)}
-        </dl>
-        <div class="foot"><span>3D 개념도 · 실제 치수·마감과 다를 수 있습니다</span><span>향동동 391 · 9BL</span></div>
-      </div>
+      <div class="cap">${cap}</div>
+      <div class="sheet" id="sheet-${u.id}">${renderUnit(u, st)}</div>
       <div class="toggles">
-        <button type="button" data-t="sink" aria-pressed="${st.sink}">싱크대</button>
-        <button type="button" data-t="blind" aria-pressed="${st.blind}">블라인드</button>
+        <button type="button" data-t="sink" aria-pressed="${state[u.id].sink}">싱크대</button>
+        <button type="button" data-t="blind" aria-pressed="${state[u.id].blind}">블라인드</button>
       </div>
     </article>`;
 }
@@ -766,6 +609,6 @@ const sampleId = (location.search.match(/[?&]sample=([^&]+)/) || [])[1];
 if (sampleId) {
   const u = UNITS.find(x => x.id === sampleId);
   document.body.classList.add("export");
-  grid.innerHTML = `<div class="sheet clean" id="sheet-${u.id}-clean">${renderUnit(u, { ...state[u.id], clean: true, balcony: true })}</div>`;
+  grid.innerHTML = `<div class="sheet clean" id="sheet-${u.id}-clean">${renderUnit(u, { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !u.terrace })}</div>`;
 } else renderAll();
 </script>
