@@ -106,11 +106,35 @@
   .note { padding: 8px 18px 0; font-size: 13px; color: var(--sheet-ink); }
   .foot { display: flex; justify-content: space-between; gap: 10px; padding: 8px 18px 12px; font-size: 11px; color: var(--sheet-muted); }
 
+  /* 지하 드라이브인(FB) 시트 — 참고 이미지 양식 */
+  .sheet.fb { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr); align-items: start; }
+  .fb-left { padding: 22px 8px 12px 22px; display: grid; gap: 4px; align-content: start; }
+  .fb-left .t1 { font-size: 26px; font-weight: 800; color: #1f2a44; letter-spacing: -0.02em; line-height: 1.15; }
+  .fb-left .t2 { font-size: 19px; font-weight: 800; color: #4a5688; }
+  .fb-left .t3 { font-size: 13px; color: #4a5688; }
+  .fb-left ul { margin: 10px 0 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13px; color: #1f2a44; }
+  .fb-left li::before { content: "· "; }
+  .fb-brand { margin-top: 16px; font-size: 20px; font-weight: 800; color: #1f2a44; line-height: 1.2; }
+  .fb-brand span { color: #2563eb; }
+  .fb-brand div { font-variant-numeric: tabular-nums; }
+  .fb-right { padding: 8px 8px 0 0; min-width: 0; }
+  .fb-foot { grid-column: 1 / -1; padding: 4px 22px 14px; font-size: 11px; color: #5d6670; }
+  @media (max-width: 560px) { .sheet.fb { grid-template-columns: 1fr; } .fb-right { padding: 0 8px; } }
+
   /* 내보내기 모드(PNG 렌더용) */
   body.export { background: #ffffff; padding: 0; }
   body.export header.top, body.export .toggles { display: none; }
   body.export .wrap { max-width: none; gap: 0; }
-  body.export .grid { grid-template-columns: 1080px; gap: 24px; padding: 12px; }
+  body.export .grid { grid-template-columns: max-content; gap: 24px; padding: 12px; }
+  body.export .sheet { width: 1080px; }
+  body.export .sheet.fb { width: 1500px; }
+  body.export .fb-left { padding: 40px 10px 20px 44px; gap: 6px; }
+  body.export .fb-left .t1 { font-size: 50px; }
+  body.export .fb-left .t2 { font-size: 34px; }
+  body.export .fb-left .t3 { font-size: 21px; }
+  body.export .fb-left ul { font-size: 21px; gap: 6px; margin-top: 18px; }
+  body.export .fb-brand { font-size: 38px; margin-top: 30px; }
+  body.export .fb-foot { font-size: 17px; padding: 6px 44px 24px; }
   body.export .sheet { border-radius: 0; border-color: #e2e4df; }
   body.export .sheet-head { padding: 26px 32px 8px; }
   body.export .sheet-head .no { font-size: 46px; }
@@ -184,7 +208,8 @@ const UNITS = [
     note: "두 호실 연속 · 가벽 유지(터놓지 않음) · 일괄 임차" },
   { id: "FB102-103", title: "FB102·103", area: 44.55, dir: null, sink: false, blind: false, drive: true,
     height: 3.0, door: 2.10, doorH: 2.12,
-    rooms: [{ id: "FB102", area: 21.64, w: 4.92, d: 13.51 }, { id: "FB103", area: 22.91, w: 5.21, d: 13.52 }],
+    rooms: [{ id: "FB102", area: 21.64, m2: 71.54, w: 4.92, d: 13.51 }, { id: "FB103", area: 22.91, m2: 75.73, w: 5.21, d: 13.52 }],
+    fbBullets: ["호실마다 출입문 1개 (2.10×2.12m)", "두 호실 따로 / 합쳐서 임대 가능"],
     note: "층고 약 3M(FB102 2.94m · FB103 2.99m) · 출입문 2.10×2.12m · 따로/합쳐서 가능" },
   { id: "KA1906", area: 39.56, dir: "남동향 코너", corner: ["남", "동"], sink: null, blind: null },
   { id: "KB1710", area: 10.67, dir: "서향",  sink: null, blind: null },
@@ -252,8 +277,8 @@ function renderUnit(u, st) {
   const poly = (pts, s) => ops.push({ t: "poly", pts, ...s });
   const path = (rings, s) => ops.push({ t: "path", rings, ...s });
   const line = (pts, s) => ops.push({ t: "line", pts, ...s });
-  const ftext = (x, y, z, str, size, s) => ops.push({ t: "ftext", at: [x, y, z], str, size, ...s });
-  const tag = (p, str) => ops.push({ t: "tag", at: p, str });
+  const ftext = (x, y, z, str, size, s) => { if (!st.clean) ops.push({ t: "ftext", at: [x, y, z], str, size, ...s }); };
+  const tag = (p, str) => { if (!st.clean) ops.push({ t: "tag", at: p, str }); };
 
   // 박스: 보이는 면(+y, +x, 윗면)만 그림
   function box(x0, x1, y0, y1, z0, z1, c) {
@@ -274,8 +299,8 @@ function renderUnit(u, st) {
     if (i < rooms.length - 1) {
       // 오른쪽 가벽 뒤로 가려지지 않게 깊이 방향으로 눕혀 표기
       const fx = r.ox + size * 0.6;
-      ops.push({ t: "ftextY", at: [fx, r.d * 0.5, 0], str: r.id, size, fill: "#6f6a60", weight: 800 });
-      ops.push({ t: "ftextY", at: [fx + size * 0.95, r.d * 0.5, 0], str: `${r.area}평`, size: size * 0.62, fill: "#7d786e", weight: 700 });
+      if (!st.clean) ops.push({ t: "ftextY", at: [fx, r.d * 0.5, 0], str: r.id, size, fill: "#6f6a60", weight: 800 });
+      if (!st.clean) ops.push({ t: "ftextY", at: [fx + size * 0.95, r.d * 0.5, 0], str: `${r.area}평`, size: size * 0.62, fill: "#7d786e", weight: 700 });
     } else {
       const cx = r.ox + r.w / 2, cy = r.d * 0.5;
       ftext(cx, cy, 0, r.id, size, { fill: "#6f6a60", weight: 800 });
@@ -294,6 +319,18 @@ function renderUnit(u, st) {
     line([[W, ry, 1.1], [W, -T, 1.1]], { stroke: COL.rail, sw: 2.2 });
     line([[W, -T, 0], [W, -T, 1.1]], { stroke: COL.rail, sw: 1.6 });
     tag([W, -T - td * 0.6, 1.5], "단독 테라스");
+  }
+
+  /* 2-1. 발코니 (창 밖 슬래브 + 유리 난간) */
+  if (st.balcony && hasWin) {
+    const bd = 1.8, by = -T - bd, rh = 1.1;
+    box(0, W + 0.6, by, -T, -0.15, 0, { fy: "#b9b3a8", fx: "#aaa398", top: "#d6c7ad" });
+    for (let x = 0.3; x < W + 0.6; x += 0.3) line([[x, -T, 0.002], [x, by, 0.002]], { stroke: "#c2b193", sw: 0.8 });
+    poly(rectY(0, W + 0.6, 0, rh, by), { fill: "#b7d3e2", op: 0.55, stroke: "#4f626d", sw: 1.4 });
+    poly(rectX(by, -T, 0, rh, W + 0.6), { fill: "#b7d3e2", op: 0.55, stroke: "#4f626d", sw: 1.4 });
+    const n = Math.max(2, Math.round(W / 1.2));
+    for (let i = 1; i < n; i++) line([[(W + 0.6) * i / n, by, 0], [(W + 0.6) * i / n, by, rh]], { stroke: "#4f626d", sw: 1.2 });
+    line([[0, by, rh], [W + 0.6, by, rh], [W + 0.6, -T, rh]], { stroke: "#3d474d", sw: 3 });
   }
 
   /* 창 · 블라인드 · 커튼 */
@@ -361,8 +398,8 @@ function renderUnit(u, st) {
   poly([[-T, -T, H], [W, -T, H], [W, 0, H], [-T, 0, H]], { fill: COL.wallTop, stroke: COL.edge });
 
   /* 4. 호실별: 가벽 → 싱크대 → 출입문 */
-  const doorW = u.drive ? (u.door || 2.4) : 0.95;
-  const doorH = u.drive ? (u.doorH || 2.2) : 2.1;
+  const doorW = st.clean ? (u.door || (u.drive ? 2.1 : 1.8)) : u.drive ? (u.door || 2.4) : 0.95;
+  const doorH = st.clean ? (u.doorH || 2.1) : u.drive ? (u.doorH || 2.2) : 2.1;
   const doors = [];
   rooms.forEach((r, i) => {
     if (i > 0) {  // 가벽(터놓지 않음) — 반투명
@@ -372,10 +409,12 @@ function renderUnit(u, st) {
       poly([[x - T / 2, D, 0], [x + T / 2, D, 0], [x + T / 2, D, H], [x - T / 2, D, H]], { fill: COL.wallEnd, op: 0.8, stroke: COL.edge });
     }
     if (st.sink && i === 0) sink(r.d, u.sinkLabel === "대리석");
-    const xa = u.drive ? r.ox + (r.w - doorW) / 2 : r.ox + r.w - 0.35 - doorW;
+    const xa = u.drive || st.clean ? r.ox + (r.w - doorW) / 2 : r.ox + r.w - 0.35 - doorW;
     const xb = xa + doorW;
     doors.push([xa, xb]);
-    if (!u.drive) {
+    if (st.clean) {
+      // 양개문은 전면벽 단계에서 그림
+    } else if (!u.drive) {
       poly([[xb, r.d - doorW, 0], [xb, r.d, 0], [xb, r.d, doorH], [xb, r.d - doorW, doorH]], { fill: COL.leaf, op: 0.9, stroke: "#8e6c47", sw: 1.2 });
       const arc = [];
       for (let k = 0; k <= 16; k++) { const th = (Math.PI / 2) * k / 16; arc.push([xb - doorW * Math.cos(th), r.d - doorW * Math.sin(th), 0.003]); }
@@ -416,8 +455,17 @@ function renderUnit(u, st) {
   if (W - x > 0.01) box(x, W, D, D + T, 0, HC, cutC);
   box(W, W + T, -T, D + T, 0, HC, cutC);
 
-  /* 6. 문틀(점선) · 셔터 */
-  doors.forEach(([xa, xb]) => {
+  /* 6. 문틀(점선) · 셔터 / 양개문 */
+  if (st.clean) doors.forEach(([xa, xb]) => {
+    const y = D + T / 2, c = (xa + xb) / 2;
+    box(xa - 0.08, xb + 0.08, D, D + T, 0, doorH + 0.08, { fy: "#3f4650", fx: "#3f4650", top: "#2b3037", edge: "#2b3037" });
+    [[xa, c], [c, xb]].forEach(([p, q]) => {
+      poly([[p + 0.02, D + T + 0.002, 0.02], [q - 0.02, D + T + 0.002, 0.02], [q - 0.02, D + T + 0.002, doorH], [p + 0.02, D + T + 0.002, doorH]], { fill: "#7a838e", stroke: "#2b3037", sw: 1 });
+      poly([[p + 0.2, D + T + 0.004, doorH * 0.55], [q - 0.2, D + T + 0.004, doorH * 0.55], [q - 0.2, D + T + 0.004, doorH - 0.2], [p + 0.2, D + T + 0.004, doorH - 0.2]], { fill: "#c3ccd4", stroke: "#2b3037", sw: 0.8 });
+    });
+    [c - 0.1, c + 0.1].forEach(hx => line([[hx, D + T + 0.006, 0.95], [hx, D + T + 0.006, 1.2]], { stroke: "#e2e6ea", sw: 2.4 }));
+  });
+  if (!st.clean) doors.forEach(([xa, xb]) => {
     line([[xa, D + T / 2, 0], [xa, D + T / 2, doorH], [xb, D + T / 2, doorH], [xb, D + T / 2, 0]], { stroke: COL.door, sw: 1.6, dash: "6 5" });
     if (u.drive) {
       box(xa - 0.05, xb + 0.05, D, D + T + 0.12, doorH, doorH + 0.3, { fy: "#c9ced2", fx: "#b5bbc0", top: "#dde1e4", edge: "#7c848a" });
@@ -427,21 +475,25 @@ function renderUnit(u, st) {
 
   /* 7. 치수(실측값이 있을 때만) */
   const dimOps = [];
-  if (u.rooms && u.rooms.every(r => r.w)) {
+  const measured = !!(u.rooms && u.rooms.every(r => r.w));
+  if (measured || st.clean) {
+    const DIM = st.clean ? "#e11d2a" : COL.dim, fs = st.clean ? 0.62 : 0.5, pre = measured ? "" : "약 ";
+    const fmt = v => measured ? v.toFixed(2) : (Math.round(v * 10) / 10).toFixed(1);
     const yd = D + T + 0.9;
     rooms.forEach(r => {
-      dimOps.push({ t: "line", pts: [[r.ox, yd, 0], [r.ox + r.w, yd, 0]], stroke: COL.dim, sw: 1.4 });
-      [r.ox, r.ox + r.w].forEach(xx => dimOps.push({ t: "line", pts: [[xx, D + T + 0.3, 0], [xx, yd + 0.25, 0]], stroke: COL.dim, sw: 1 }));
-      dimOps.push({ t: "ftext", at: [r.ox + r.w / 2, yd + 0.55, 0], str: `${r.w.toFixed(2)}m`, size: 0.5, fill: COL.dim, weight: 700 });
+      dimOps.push({ t: "line", pts: [[r.ox, yd, 0], [r.ox + r.w, yd, 0]], stroke: DIM, sw: 2 });
+      [r.ox, r.ox + r.w].forEach(xx => dimOps.push({ t: "line", pts: [[xx, D + T + 0.3, 0], [xx, yd + 0.25, 0]], stroke: DIM, sw: 1.2 }));
+      dimOps.push({ t: "ftext", at: [r.ox + r.w / 2, yd + 0.65, 0], str: `${st.clean ? "가로 " : ""}${pre}${fmt(r.w)}m`, size: fs, fill: DIM, weight: 800 });
     });
     const xd = W + T + 0.9;
-    dimOps.push({ t: "line", pts: [[xd, 0, 0], [xd, D, 0]], stroke: COL.dim, sw: 1.4 });
-    [0, D].forEach(yy => dimOps.push({ t: "line", pts: [[W + T + 0.3, yy, 0], [xd + 0.25, yy, 0]], stroke: COL.dim, sw: 1 }));
-    dimOps.push({ t: "ftextY", at: [xd + 0.25, D / 2, 0], str: `${D.toFixed(2)}m`, size: 0.5, fill: COL.dim, weight: 700 });
-    const hx = W + 0.6;
-    dimOps.push({ t: "line", pts: [[hx, -T, 0], [hx, -T, H]], stroke: COL.dim, sw: 1.4 });
-    [0, H].forEach(zz => dimOps.push({ t: "line", pts: [[hx - 0.15, -T, zz], [hx + 0.15, -T, zz]], stroke: COL.dim, sw: 1.4 }));
-    dimOps.push({ t: "vtext", at: [hx + 0.05, -T, H / 2], str: `높이 ${H.toFixed(1)}m` });
+    dimOps.push({ t: "line", pts: [[xd, 0, 0], [xd, D, 0]], stroke: DIM, sw: 2 });
+    [0, D].forEach(yy => dimOps.push({ t: "line", pts: [[W + T + 0.3, yy, 0], [xd + 0.25, yy, 0]], stroke: DIM, sw: 1.2 }));
+    dimOps.push({ t: "ftextY", at: [xd + 0.35, D / 2, 0], str: `${st.clean ? "세로 " : ""}${pre}${fmt(D)}m`, size: fs, fill: DIM, weight: 800 });
+    // 높이: 왼쪽 앞 모서리 바깥
+    const hp = [-T - 0.5, D + T + 0.5];
+    dimOps.push({ t: "line", pts: [[hp[0], hp[1], 0], [hp[0], hp[1], H]], stroke: DIM, sw: 2 });
+    [0, H].forEach(zz => dimOps.push({ t: "line", pts: [[hp[0] - 0.15, hp[1] + 0.15, zz], [hp[0] + 0.15, hp[1] - 0.15, zz]], stroke: DIM, sw: 2 }));
+    dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H / 2], str: `높이 ${u.height ? "" : "약 "}${H.toFixed(1)}m`, fill: DIM });
   }
   ops.push(...dimOps);
 
@@ -488,7 +540,7 @@ function renderUnit(u, st) {
       out.push(`<text transform="matrix(${m.map(v => v.toFixed(4)).join(" ")} ${ex} ${ey})" font-size="${(fs / 1).toFixed(1)}" font-weight="${o.weight || 700}" fill="${o.fill}" text-anchor="middle" dominant-baseline="middle" font-family="Noto Sans KR, sans-serif">${esc(o.str)}</text>`);
     } else if (o.t === "vtext") {
       const [ex, ey] = S(o.at);
-      out.push(`<text transform="translate(${ex + 26} ${ey}) rotate(-90)" font-size="19" font-weight="700" fill="${COL.dim}" text-anchor="middle" font-family="Noto Sans KR, sans-serif">${esc(o.str)}</text>`);
+      out.push(`<text transform="translate(${o.left ? ex - 12 : ex + 26} ${ey}) rotate(-90)" font-size="22" font-weight="800" fill="${o.fill || COL.dim}" text-anchor="middle" font-family="Noto Sans KR, sans-serif">${esc(o.str)}</text>`);
     } else if (o.t === "tag") {
       const [ex, ey] = S(o.at);
       const w = o.str.length * 17 + 22;
@@ -496,6 +548,139 @@ function renderUnit(u, st) {
     }
   });
   return `<svg class="drawing" viewBox="0 0 ${VW} ${VH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc((u.title || u.id) + " 3D 개념도")}">${out.join("")}</svg>`;
+}
+
+/* ───────── 지하 드라이브인(FB) — 창 없는 박스 + 양개문 + 빨간 치수 ───────── */
+// FB2층은 참고 도면(12.74평, 가로 약 4.0 × 세로 약 9.5m)과 같은 깊이 9.5m,
+// FB1층은 FB102·103 실측 깊이 13.5m를 기준으로 가로를 전용면적에서 역산
+const FB_DEPTH = { "2": 9.5, "1": 13.5 };
+
+function fbRooms(u) {
+  const src = u.rooms || [{ id: u.id, area: u.area }];
+  return src.map(r => {
+    if (r.w) return { ...r, known: true };
+    const d = FB_DEPTH[u.id[2]] || 9.5;
+    return { ...r, w: (r.area * M2_PER_PY) / d, d, known: false };
+  });
+}
+
+function renderFB(u) {
+  const VW = 1000, VH = 640;
+  const rooms = fbRooms(u);
+  const H = u.height || 3.0, T = 0.28;
+  const L = Math.max(...rooms.map(r => r.d));           // 세로(깊이) — 화면 오른쪽 아래로
+  let oy = 0; rooms.forEach(r => { r.oy = oy; oy += r.w; });
+  const W = oy;                                         // 가로 — 화면 왼쪽 아래로
+  const ex = [0.67, 0.74], ey = [-0.8, 0.59], ez = [0, -0.52];
+  const pr = ([x, y, z]) => [x * ex[0] + y * ey[0] + z * ez[0], x * ex[1] + y * ey[1] + z * ez[1]];
+
+  const ops = [];
+  const poly = (pts, fill, stroke = "#3a3f47", sw = 1.2) => ops.push({ t: "poly", pts, fill, stroke, sw });
+  const rings = (rs, fill) => ops.push({ t: "path", rs, fill });
+
+  // 1. 바닥
+  rooms.forEach(r => poly([[0, r.oy, 0], [L, r.oy, 0], [L, r.oy + r.w, 0], [0, r.oy + r.w, 0]], "#d8dadf", "#9ca0a8", 1));
+  // 2. 안쪽 벽면(뒤쪽 두 벽 + 호실 사이 벽)
+  poly([[0, 0, 0], [0, W, 0], [0, W, H], [0, 0, H]], "#f3f3f1");
+  poly([[0, 0, 0], [L, 0, 0], [L, 0, H], [0, 0, H]], "#e9eaea");
+  rooms.slice(1).forEach(r => poly([[0, r.oy + T / 2, 0], [L, r.oy + T / 2, 0], [L, r.oy + T / 2, H], [0, r.oy + T / 2, H]], "#e9eaea"));
+  // 3. 바깥 벽면(앞쪽 긴 벽, 출입문 쪽 짧은 벽)
+  poly([[-T, W + T, 0], [L + T, W + T, 0], [L + T, W + T, H], [-T, W + T, H]], "#fbfbfa");
+  poly([[L + T, -T, 0], [L + T, W + T, 0], [L + T, W + T, H], [L + T, -T, H]], "#efefed");
+  // 4. 벽 윗면(굵은 검정 테두리)
+  const top = [[[-T, -T, H], [L + T, -T, H], [L + T, W + T, H], [-T, W + T, H]]];
+  rooms.forEach((r, i) => {
+    const a = r.oy + (i ? T / 2 : 0), b = r.oy + r.w - (i < rooms.length - 1 ? T / 2 : 0);
+    top.push([[0, a, H], [L, a, H], [L, b, H], [0, b, H]]);
+  });
+  rings(top, "#16181c");
+  // 5. 양개 출입문 — 호실마다 하나
+  const dw = u.door || 1.8, dh = u.doorH || 2.1, X = L + T + 0.005;
+  rooms.forEach(r => {
+    const c = r.oy + r.w / 2, a = c - dw / 2, b = c + dw / 2;
+    poly([[X, a - 0.08, 0], [X, b + 0.08, 0], [X, b + 0.08, dh + 0.08], [X, a - 0.08, dh + 0.08]], "#3f4650", "#2b3037");
+    [[a, c], [c, b]].forEach(([p, q]) => {
+      poly([[X, p + 0.03, 0.02], [X, q - 0.03, 0.02], [X, q - 0.03, dh], [X, p + 0.03, dh]], "#6b7480", "#2b3037", 1);
+      poly([[X, p + 0.18, dh * 0.5], [X, q - 0.18, dh * 0.5], [X, q - 0.18, dh - 0.2], [X, p + 0.18, dh - 0.2]], "#b8c2cc", "#2b3037", 0.8);
+    });
+    ops.push({ t: "seg", pts: [[X, c - 0.12, 0.95], [X, c - 0.12, 1.2]], stroke: "#d6dbe0", sw: 2.4 });
+    ops.push({ t: "seg", pts: [[X, c + 0.12, 0.95], [X, c + 0.12, 1.2]], stroke: "#d6dbe0", sw: 2.4 });
+  });
+
+  // 6. 빨간 치수
+  const RED = "#e11d2a", fmt = v => (Math.round(v * 10) / 10).toFixed(1);
+  const off = 1.1;
+  ops.push({ t: "dim", a: [0, W + T + off, 0], b: [L, W + T + off, 0],
+    label: `세로 ${rooms.every(r => r.known) ? "" : "약 "}${fmt(L)}m`, side: "left" });
+  rooms.forEach(r => ops.push({ t: "dim", a: [L + T + off, r.oy, 0], b: [L + T + off, r.oy + r.w, 0],
+    label: (rooms.length > 1 ? `${r.id} ` : "") + `가로 ${r.known ? r.w.toFixed(2) : "약 " + fmt(r.w)}m`, side: "below" }));
+  ops.push({ t: "hdim", a: [-T, W + T + 0.35, 0], b: [-T, W + T + 0.35, H], label: `${fmt(H)}m` });
+
+  // ── 화면 맞춤 ──
+  let x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity;
+  const grow = p => { const [a, b] = pr(p); x0 = Math.min(x0, a); x1 = Math.max(x1, a); y0 = Math.min(y0, b); y1 = Math.max(y1, b); };
+  ops.forEach(o => (o.pts || (o.rs ? o.rs.flat() : [o.a, o.b])).forEach(grow));
+  const padL = 230, padR = 150, padT = 40, padB = 90;
+  const k = Math.min((VW - padL - padR) / (x1 - x0), (VH - padT - padB) / (y1 - y0));
+  const ox = padL + ((VW - padL - padR) - (x1 - x0) * k) / 2 - x0 * k;
+  const oyS = padT + ((VH - padT - padB) - (y1 - y0) * k) / 2 - y0 * k;
+  const S = p => { const [a, b] = pr(p); return [a * k + ox, b * k + oyS]; };
+  const P = arr => arr.map(p => S(p).map(v => v.toFixed(1)).join(",")).join(" ");
+  const FONT = `font-family="Noto Sans KR, sans-serif" font-weight="800"`;
+  const arrow = (tip, from) => {
+    const dx = tip[0] - from[0], dy = tip[1] - from[1], n = Math.hypot(dx, dy) || 1, ux = dx / n, uy = dy / n;
+    const s = 16, w = 7;
+    return `<polyline points="${tip[0] - ux * s - uy * w},${tip[1] - uy * s + ux * w} ${tip[0]},${tip[1]} ${tip[0] - ux * s + uy * w},${tip[1] - uy * s - ux * w}" fill="none" stroke="${RED}" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  };
+  const out = [];
+  ops.forEach(o => {
+    if (o.t === "poly") out.push(`<polygon points="${P(o.pts)}" fill="${o.fill}" stroke="${o.stroke}" stroke-width="${o.sw}" stroke-linejoin="round"/>`);
+    else if (o.t === "path") out.push(`<path fill-rule="evenodd" fill="${o.fill}" d="${o.rs.map(r => "M" + r.map(p => S(p).join(",")).join("L") + "Z").join("")}"/>`);
+    else if (o.t === "seg") out.push(`<polyline points="${P(o.pts)}" stroke="${o.stroke}" stroke-width="${o.sw}" stroke-linecap="round" fill="none"/>`);
+    else if (o.t === "dim" || o.t === "hdim") {
+      const A = S(o.a), B = S(o.b);
+      out.push(`<line x1="${A[0]}" y1="${A[1]}" x2="${B[0]}" y2="${B[1]}" stroke="${RED}" stroke-width="3.2"/>`);
+      out.push(arrow(A, B), arrow(B, A));
+      if (o.t === "dim") {  // 치수보조선
+        const n = [B[1] - A[1], -(B[0] - A[0])], m = Math.hypot(...n), e = [n[0] / m * 14, n[1] / m * 14];
+        [A, B].forEach(Q => out.push(`<line x1="${Q[0] - e[0]}" y1="${Q[1] - e[1]}" x2="${Q[0] + e[0]}" y2="${Q[1] + e[1]}" stroke="${RED}" stroke-width="2"/>`));
+      }
+      const M = [(A[0] + B[0]) / 2, (A[1] + B[1]) / 2];
+      if (o.t === "hdim") {
+        out.push(`<text x="${M[0] - 22}" y="${M[1] - 16}" font-size="22" fill="${RED}" text-anchor="end" ${FONT}>마감고</text>`);
+        out.push(`<text x="${M[0] - 22}" y="${M[1] + 20}" font-size="34" fill="${RED}" text-anchor="end" ${FONT}>${o.label}</text>`);
+      } else if (o.side === "left") {
+        out.push(`<text x="${M[0] - 26}" y="${M[1] + 12}" font-size="30" fill="${RED}" text-anchor="end" ${FONT}>${o.label}</text>`);
+      } else {
+        out.push(`<text x="${M[0] + 10}" y="${M[1] + 42}" font-size="${rooms.length > 1 ? 24 : 30}" fill="${RED}" ${FONT}>${o.label}</text>`);
+      }
+    }
+  });
+  return `<svg class="drawing" viewBox="0 0 ${VW} ${VH}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${u.title || u.id} 3D 개념도">${out.join("")}</svg>`;
+}
+
+function fbSheetHTML(u) {
+  const loc = locate(u.id);
+  const rooms = fbRooms(u);
+  const m2 = r => (r.m2 || r.area * M2_PER_PY).toFixed(2);
+  const areaLine = rooms.length > 1
+    ? `전용면적 ${rooms.map(r => `${r.id} ${m2(r)}m²`).join(" + ")} (합 약 ${u.area}평)`
+    : `전용면적 ${m2(rooms[0])}m² (약 ${u.area}평)`;
+  const bullets = [areaLine, "호실 앞 주차 가능", "차량 접근이 쉬운 드라이브인 구조", ...(u.fbBullets || [])];
+  return `
+    <article class="card" data-id="${u.id}" data-g="F">
+      <div class="sheet fb" id="sheet-${u.id}">
+        <div class="fb-left">
+          <div class="t1">DMC 플렉스 데시앙</div>
+          <div class="t2">${u.title || u.id}호 · 드라이브인 호실</div>
+          <div class="t3">${loc.floor} · 3D 개념도 (참고용)</div>
+          <ul>${bullets.map(b => `<li>${b}</li>`).join("")}</ul>
+          <div class="fb-brand">DMC 삼성 <span>부동산</span><div>02-354-2299</div></div>
+        </div>
+        <div class="fb-right">${renderFB(u)}</div>
+        <div class="fb-foot">상기 치수는 ${rooms.every(r => r.known) ? "매물장 실측 기준" : "전용면적 기준 추정치"}로, 현장 실측값과 차이가 있을 수 있습니다.</div>
+      </div>
+    </article>`;
 }
 
 /* ───────── 카드 ───────── */
@@ -508,6 +693,7 @@ function optCell(label, v, onTxt) {
 }
 
 function cardHTML(u) {
+  if (u.id.startsWith("FB")) return fbSheetHTML(u);
   const st = state[u.id];
   const loc = locate(u.id);
   const m2 = (u.area * M2_PER_PY).toFixed(2);
@@ -576,5 +762,10 @@ grid.addEventListener("click", e => {
   applyFilter();
 });
 if (/[?&]export\b/.test(location.search)) document.body.classList.add("export");
-renderAll();
+const sampleId = (location.search.match(/[?&]sample=([^&]+)/) || [])[1];
+if (sampleId) {
+  const u = UNITS.find(x => x.id === sampleId);
+  document.body.classList.add("export");
+  grid.innerHTML = `<div class="sheet clean" id="sheet-${u.id}-clean">${renderUnit(u, { ...state[u.id], clean: true, balcony: true })}</div>`;
+} else renderAll();
 </script>
