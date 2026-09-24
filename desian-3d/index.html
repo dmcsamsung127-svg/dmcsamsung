@@ -282,7 +282,7 @@ function renderUnit(u, st) {
   let ox = 0;
   rooms.forEach(r => { r.ox = ox; ox += r.w; });
   const W = ox, D = Math.max(...rooms.map(r => r.d));
-  const hasWin = !u.id.startsWith("FB");   // 지하 드라이브인(FB)은 창 없이 표현
+  const hasWin = !u.id.startsWith("FB") && !u.noWin;   // 지하(FB)·1층 내부형 호실은 창 없음
   const win = { sill: 0.12, head: H - 0.3 };
 
   const ops = [];
