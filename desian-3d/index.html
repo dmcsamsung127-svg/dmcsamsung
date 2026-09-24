@@ -325,16 +325,21 @@ function renderUnit(u, st) {
     tag([W, -T - td * 0.6, 1.5], "단독 테라스");
   }
 
-  /* 2-1. 발코니 (창 밖 슬래브 + 유리 난간) */
+  /* 2-1. 발코니 — 외부 유리 커튼월로 막힌 실내형(서비스) 발코니 */
+  const BD = 1.5, BY = -T - BD;
   if (st.balcony && hasWin) {
-    const bd = 1.8, by = -T - bd, rh = 1.1;
-    box(0, W + 0.6, by, -T, -0.15, 0, { fy: "#b9b3a8", fx: "#aaa398", top: "#d6c7ad" });
-    for (let x = 0.3; x < W + 0.6; x += 0.3) line([[x, -T, 0.002], [x, by, 0.002]], { stroke: "#c2b193", sw: 0.8 });
-    poly(rectY(0, W + 0.6, 0, rh, by), { fill: "#b7d3e2", op: 0.55, stroke: "#4f626d", sw: 1.4 });
-    poly(rectX(by, -T, 0, rh, W + 0.6), { fill: "#b7d3e2", op: 0.55, stroke: "#4f626d", sw: 1.4 });
-    const n = Math.max(2, Math.round(W / 1.2));
-    for (let i = 1; i < n; i++) line([[(W + 0.6) * i / n, by, 0], [(W + 0.6) * i / n, by, rh]], { stroke: "#4f626d", sw: 1.2 });
-    line([[0, by, rh], [W + 0.6, by, rh], [W + 0.6, -T, rh]], { stroke: "#3d474d", sw: 3 });
+    box(0, W, BY, -T, -0.12, 0, { fy: "#cfcbc4", fx: "#c2bdb5", top: "#dcdde0" });
+    for (let x = 0.6; x < W; x += 0.6) line([[x, -T, 0.002], [x, BY, 0.002]], { stroke: "#c9cacd", sw: 0.8 });
+    for (let y = -T - 0.6; y > BY; y -= 0.6) line([[0, y, 0.002], [W, y, 0.002]], { stroke: "#c9cacd", sw: 0.8 });
+    // 외부 커튼월(바닥~천장 유리)
+    poly(rectY(0, W, 0, H, BY), { fill: "#c7dde8", op: 0.6, stroke: "#6f8a98", sw: 1.4 });
+    const n = Math.max(2, Math.round(W / 0.9));
+    for (let k = 1; k < n; k++) line([[W * k / n, BY, 0], [W * k / n, BY, H]], { stroke: "#6f8a98", sw: 1.2 });
+    line([[0, BY, 1.1], [W, BY, 1.1]], { stroke: "#6f8a98", sw: 1.2 });
+    // 양옆 벽
+    box(-T, 0, BY - T, -T, 0, H, { fy: COL.wallEnd, fx: COL.wallX, top: COL.wallTop });
+    box(0, W, BY - T, BY, H - 0.001, H, { fy: COL.wallTop, fx: COL.wallTop, top: COL.wallTop });
+    box(W, W + T, BY - T, -T, 0, H, { fy: COL.wallEnd, fx: COL.wallEnd, top: COL.wallTop });
   }
 
   /* 창 · 블라인드 · 커튼 */
@@ -390,14 +395,25 @@ function renderUnit(u, st) {
 
   /*    뒷벽: y=0(우) — 주 창 */
   const backRings = [rectY(0, W, 0, H, 0)];
-  const winSpans = [];
+  const winSpans = [], balDoors = [];
   if (hasWin) rooms.forEach(r => {
-    const a = r.ox + (r.ox === 0 && sideWin ? 0.05 : 0.2), b = r.ox + r.w - 0.2;
+    const a = r.ox + (r.ox === 0 && sideWin ? 0.05 : 0.2);
+    let b = r.ox + r.w - 0.2;
+    if (st.balcony) {
+      balDoors.push([b - 0.9, b]);
+      backRings.push(rectY(b - 0.9, b, 0, 2.2, 0));
+      b -= 1.1;
+    }
     winSpans.push([a, b]);
     backRings.push(rectY(a, b, win.sill, win.head, 0));
   });
   path(backRings, { fill: COL.wallY, stroke: COL.edge });
   winSpans.forEach(([a, b]) => windowOnY(a, b));
+  balDoors.forEach(([a, b]) => {   // 발코니 출입 유리문
+    poly(rectY(a, b, 0, 2.2, 0), { fill: COL.glass, op: 0.45, stroke: "#5f7582", sw: 2.2 });
+    poly(rectY(a + 0.08, b - 0.08, 0.1, 2.12, 0.005), { fill: "none", stroke: "#8aa3b0", sw: 1 });
+    line([[a + 0.14, 0.01, 0.95], [a + 0.14, 0.01, 1.2]], { stroke: "#5b6166", sw: 2.4 });
+  });
   poly([[W, -T, 0], [W, 0, 0], [W, 0, H], [W, -T, H]], { fill: COL.wallEnd, stroke: COL.edge });
   poly([[-T, -T, H], [W, -T, H], [W, 0, H], [-T, 0, H]], { fill: COL.wallTop, stroke: COL.edge });
 
@@ -480,7 +496,7 @@ function renderUnit(u, st) {
   /* 7. 치수(실측값이 있을 때만) */
   const dimOps = [];
   const measured = !!(u.rooms && u.rooms.every(r => r.w));
-  if (measured || st.clean) {
+  if (measured && !st.clean) {   // 글씨 없는 이미지에는 치수 표기 없음
     const DIM = st.clean ? "#e11d2a" : COL.dim, fs = st.clean ? 0.62 : 0.5, pre = measured ? "" : "약 ";
     const fmt = v => measured ? v.toFixed(2) : (Math.round(v * 10) / 10).toFixed(1);
     const yd = D + T + 0.9;
