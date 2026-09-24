@@ -198,13 +198,13 @@ const UNITS = [
   { id: "F532",   area: 18.79, dir: "동향", sink: null,  blind: null, drive: true },
   { id: "KA911",  area: 20.94, dir: "남동향 코너", corner: ["남", "동"], sink: true, blind: null, curtain: true,
     sinkLabel: "대리석", note: "대리석 싱크대 · 쉬폰 커튼 · 바닥 인테리어 · 에어컨" },
-  { id: "KA2002", area: 25.11, dir: "서향",  sink: null, blind: null },
+  { id: "KA2002", area: 25.11, dir: "서향", corner: ["서", "북"],  sink: null, blind: null },
   { id: "KB1901", area: 22.7,  dir: "북서 코너", corner: ["북", "서"], sink: null, blind: null },
   { id: "F228",   area: 27.17, dir: "동향",  sink: null, blind: null, drive: true },
   { id: "F427",   area: 25.66, dir: "동향",  sink: null, blind: null, drive: true },
   { id: "F419",   area: 27.17, dir: "북동 코너", corner: ["북", "동"], sink: null, blind: null, drive: true },
   { id: "F347",   area: 29,    dir: "서향",  sink: null, blind: null, drive: true },
-  { id: "KB1712-1713", title: "KB1712·1713", area: 31.28, dir: "북동향", sink: null, blind: true,
+  { id: "KB1712-1713", title: "KB1712·1713", area: 31.28, dir: "북동향", corner: ["북", "동"], sink: null, blind: true,
     rooms: [{ id: "KB1712", area: 15.64 }, { id: "KB1713", area: 15.64 }],
     note: "두 호실 연속 · 가벽 유지(터놓지 않음) · 일괄 임차" },
   { id: "FB102-103", title: "FB102·103", area: 44.55, dir: null, sink: false, blind: false, drive: true,
@@ -221,6 +221,14 @@ const UNITS = [
 ];
 
 const M2_PER_PY = 3.305785;
+
+/* 층별 천장 높이 (사용자 제공): 지하1·2층 3.0M, 2~5층 3.9M, 6~20층 2.7M */
+function floorHeight(id) {
+  const m = id.match(/^(KA|KB|FB|F)(\d+)/);
+  if (m[1] === "FB") return 3.0;
+  const fl = parseInt(m[2].slice(0, -2), 10);
+  return fl <= 5 ? 3.9 : 2.7;
+}
 
 /* 호실 코드 → 동 · 층 */
 function locate(id) {
@@ -261,7 +269,7 @@ const COL = {
 
 function renderUnit(u, st) {
   const VW = 1000, VH = 720;
-  const H = u.height || (u.drive ? 3.0 : 2.7);
+  const H = floorHeight(u.id);
   const T = 0.18;            // 벽 두께
   const HC = 0.22;           // 전면 절단벽 높이
   const rooms = (u.rooms || [{ id: u.id, area: u.area }]).map(r => {
@@ -530,12 +538,12 @@ function renderUnit(u, st) {
     dimOps.push({ t: "line", pts: [[xd, 0, 0], [xd, D, 0]], stroke: DIM, sw: 2 });
     [0, D].forEach(yy => dimOps.push({ t: "line", pts: [[W + T + 0.3, yy, 0], [xd + 0.25, yy, 0]], stroke: DIM, sw: 1.2 }));
     dimOps.push({ t: "ftextY", at: [xd + 0.35, D / 2, 0], str: st.clean ? `${fmt(D)}M` : `${pre}${fmt(D)}m`, size: fs, fill: DIM, weight: 800 });
-    // 높이: 왼쪽 앞 모서리 바깥 (글씨 없는 이미지에는 생략)
-    if (!st.clean) {
+    // 높이: 왼쪽 앞 모서리 바깥
+    {
     const hp = [-T - 0.5, D + T + 0.5];
     dimOps.push({ t: "line", pts: [[hp[0], hp[1], 0], [hp[0], hp[1], H]], stroke: DIM, sw: 2 });
     [0, H].forEach(zz => dimOps.push({ t: "line", pts: [[hp[0] - 0.15, hp[1] + 0.15, zz], [hp[0] + 0.15, hp[1] - 0.15, zz]], stroke: DIM, sw: 2 }));
-    dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H / 2], str: `높이 ${u.height ? "" : "약 "}${H.toFixed(1)}m`, fill: DIM });
+    dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H / 2], str: st.clean ? `${H.toFixed(1)}M` : `높이 ${H.toFixed(1)}m`, fill: DIM });
     }
   }
   ops.push(...dimOps);
