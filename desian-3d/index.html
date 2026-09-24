@@ -397,7 +397,7 @@ function renderUnit(u, st) {
   }
 
   /* 3. 뒷벽: x=0(좌) — 코너면 측창 */
-  const sideWin = u.corner ? [0.25, Math.max(1.5, D - 1.6)] : null;
+  const sideWin = u.corner ? [st.clean ? 0.7 : 0.25, Math.max(1.5, D - 1.6)] : null;   // clean: 모서리 기둥 피함
   const leftFace = rectX(0, D, 0, H, 0);
   if (sideWin) path([leftFace, rectX(sideWin[0], sideWin[1], win.sill, win.head, 0)], { fill: COL.wallX, stroke: COL.edge });
   else poly(leftFace, { fill: COL.wallX, stroke: COL.edge });
@@ -408,9 +408,17 @@ function renderUnit(u, st) {
   /*    뒷벽: y=0(우) — 주 창 */
   const backRings = [rectY(0, W, 0, H, 0)];
   const winSpans = [], balDoors = [];
+  // 기둥(층별 아이소 도면 기준): 창측 모서리에 0.6m 각 기둥, 폭 6.5m 이상이면 양쪽 모서리
+  const COLW = 0.6;
+  const pillars = [];
+  rooms.forEach((r, i) => {
+    pillars.push(r.ox + (i ? T / 2 : 0));
+    if (r.w >= 6.5 || i === rooms.length - 1 && rooms.length > 1) pillars.push(r.ox + r.w - COLW - (i < rooms.length - 1 ? T / 2 : 0));
+  });
+  const colAt = (x0, x1) => pillars.some(px => px + COLW > x0 && px < x1);
   if (hasWin) rooms.forEach(r => {
-    const a = r.ox + (r.ox === 0 && sideWin ? 0.05 : 0.2);
-    let b = r.ox + r.w - 0.2;
+    const a = r.ox + (colAt(r.ox, r.ox + 1) ? COLW + 0.15 : (r.ox === 0 && sideWin ? 0.05 : 0.2));
+    let b = r.ox + r.w - (colAt(r.ox + r.w - 1, r.ox + r.w) ? COLW * 2 + 0.15 : 0.2);   // 등각에서 기둥 앞면이 왼쪽으로 가림
     if (st.balcony) {
       balDoors.push([b - 0.9, b]);
       backRings.push(rectY(b - 0.9, b, 0, 2.2, 0));
@@ -426,6 +434,7 @@ function renderUnit(u, st) {
     poly(rectY(a + 0.08, b - 0.08, 0.1, 2.12, 0.005), { fill: "none", stroke: "#8aa3b0", sw: 1 });
     line([[a + 0.14, 0.01, 0.95], [a + 0.14, 0.01, 1.2]], { stroke: "#5b6166", sw: 2.4 });
   });
+  if (st.clean) pillars.forEach(px => box(px, px + COLW, 0, COLW, 0, H, { fy: "#d9d4cb", fx: "#e4e0d8", top: "#8f897e" }));
   poly([[W, -T, 0], [W, 0, 0], [W, 0, H], [W, -T, H]], { fill: COL.wallEnd, stroke: COL.edge });
   poly([[-T, -T, H], [W, -T, H], [W, 0, H], [-T, 0, H]], { fill: COL.wallTop, stroke: COL.edge });
 
