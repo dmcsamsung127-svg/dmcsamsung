@@ -508,24 +508,26 @@ function renderUnit(u, st) {
   /* 7. 치수(실측값이 있을 때만) */
   const dimOps = [];
   const measured = !!(u.rooms && u.rooms.every(r => r.w));
-  if (measured && !st.clean) {   // 글씨 없는 이미지에는 치수 표기 없음
-    const DIM = st.clean ? "#e11d2a" : COL.dim, fs = st.clean ? 0.62 : 0.5, pre = measured ? "" : "약 ";
+  if (measured || st.clean) {   // 네이버 광고 정책: 이미지에는 가로·세로 숫자만(예: 4.3M)
+    const DIM = st.clean ? "#e11d2a" : COL.dim, fs = st.clean ? 0.62 : 0.5, pre = measured || st.clean ? "" : "약 ";
     const fmt = v => measured ? v.toFixed(2) : (Math.round(v * 10) / 10).toFixed(1);
     const yd = D + T + 0.9;
     rooms.forEach(r => {
       dimOps.push({ t: "line", pts: [[r.ox, yd, 0], [r.ox + r.w, yd, 0]], stroke: DIM, sw: 2 });
       [r.ox, r.ox + r.w].forEach(xx => dimOps.push({ t: "line", pts: [[xx, D + T + 0.3, 0], [xx, yd + 0.25, 0]], stroke: DIM, sw: 1.2 }));
-      dimOps.push({ t: "ftext", at: [r.ox + r.w / 2, yd + 0.65, 0], str: `${st.clean ? "가로 " : ""}${pre}${fmt(r.w)}m`, size: fs, fill: DIM, weight: 800 });
+      dimOps.push({ t: "ftext", at: [r.ox + r.w / 2, yd + 0.65, 0], str: st.clean ? `${fmt(r.w)}M` : `${pre}${fmt(r.w)}m`, size: fs, fill: DIM, weight: 800 });
     });
     const xd = W + T + 0.9;
     dimOps.push({ t: "line", pts: [[xd, 0, 0], [xd, D, 0]], stroke: DIM, sw: 2 });
     [0, D].forEach(yy => dimOps.push({ t: "line", pts: [[W + T + 0.3, yy, 0], [xd + 0.25, yy, 0]], stroke: DIM, sw: 1.2 }));
-    dimOps.push({ t: "ftextY", at: [xd + 0.35, D / 2, 0], str: `${st.clean ? "세로 " : ""}${pre}${fmt(D)}m`, size: fs, fill: DIM, weight: 800 });
-    // 높이: 왼쪽 앞 모서리 바깥
+    dimOps.push({ t: "ftextY", at: [xd + 0.35, D / 2, 0], str: st.clean ? `${fmt(D)}M` : `${pre}${fmt(D)}m`, size: fs, fill: DIM, weight: 800 });
+    // 높이: 왼쪽 앞 모서리 바깥 (글씨 없는 이미지에는 생략)
+    if (!st.clean) {
     const hp = [-T - 0.5, D + T + 0.5];
     dimOps.push({ t: "line", pts: [[hp[0], hp[1], 0], [hp[0], hp[1], H]], stroke: DIM, sw: 2 });
     [0, H].forEach(zz => dimOps.push({ t: "line", pts: [[hp[0] - 0.15, hp[1] + 0.15, zz], [hp[0] + 0.15, hp[1] - 0.15, zz]], stroke: DIM, sw: 2 }));
     dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H / 2], str: `높이 ${u.height ? "" : "약 "}${H.toFixed(1)}m`, fill: DIM });
+    }
   }
   ops.push(...dimOps);
 
