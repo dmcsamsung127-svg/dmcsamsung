@@ -1,0 +1,12461 @@
+[
+{
+"id": "F101",
+"area": 42.45,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 10.23,
+"d": 13.26,
+"dimSrc": "도면실측"
+},
+{
+"id": "F102",
+"area": 35.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 8.68,
+"d": 13.26,
+"dimSrc": "도면실측"
+},
+{
+"id": "F103",
+"area": 15.0,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F104",
+"area": 23.33,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.02,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F105",
+"area": 42.3,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.89,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "F106",
+"area": 32.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.71,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F107",
+"area": 15.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F108",
+"area": 15.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F109",
+"area": 15.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true
+},
+{
+"id": "F110",
+"area": 15.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F111",
+"area": 19.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F112",
+"area": 21.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 5.64,
+"d": 11.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "F113",
+"area": 15.31,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 5.68,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F114",
+"area": 15.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 5.68,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F115",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F116",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F117",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F118",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F119",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F120",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F121",
+"area": 11.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 4.44,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F122",
+"area": 10.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"noWin": true,
+"w": 3.85,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F201",
+"area": 38.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F202",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F203",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F204",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F205",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F206",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F207",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F208",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F209",
+"area": 22.81,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 6.88,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F210",
+"area": 42.3,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.89,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "F211",
+"area": 26.36,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 10.48,
+"d": 8.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F212",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F213",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F214",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F215",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F216",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F217",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F218",
+"area": 17.64,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F219",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 10.48,
+"dimSrc": "도면실측"
+},
+{
+"id": "F220",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.71,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F221",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F222",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F223",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F224",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F225",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F226",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.78,
+"dimSrc": "도면실측"
+},
+{
+"id": "F227",
+"area": 28.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F228",
+"area": 27.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 9.81,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F229",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F230",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F231",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F232",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F233",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F234",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F235",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F236",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F237",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F238",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F239",
+"area": 33.0,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 9.81,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F240",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.28,
+"dimSrc": "도면실측"
+},
+{
+"id": "F241",
+"area": 15.34,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.28,
+"dimSrc": "도면실측"
+},
+{
+"id": "F242",
+"area": 22.34,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 8.82,
+"dimSrc": "도면실측"
+},
+{
+"id": "F243",
+"area": 20.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.04,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "F244",
+"area": 25.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.41,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F245",
+"area": 25.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.41,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F246",
+"area": 24.46,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.41,
+"d": 10.76,
+"dimSrc": "도면실측"
+},
+{
+"id": "F247",
+"area": 38.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 10.62,
+"d": 11.39,
+"dimSrc": "도면실측"
+},
+{
+"id": "F248",
+"area": 19.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F249",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.75,
+"dimSrc": "도면실측"
+},
+{
+"id": "F250",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.78,
+"dimSrc": "도면실측"
+},
+{
+"id": "F251",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F252",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F253",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F254",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F255",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F301",
+"area": 38.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F302",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F303",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F304",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F305",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F306",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F307",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F308",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F309",
+"area": 22.81,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 6.88,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F310",
+"area": 42.3,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.89,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "F311",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.71,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F312",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F313",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F314",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F315",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F316",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F317",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.78,
+"dimSrc": "도면실측"
+},
+{
+"id": "F318",
+"area": 28.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F319",
+"area": 27.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 9.81,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F320",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F321",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F322",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F323",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F324",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F325",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F326",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F327",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F328",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F329",
+"area": 26.58,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.96,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F330",
+"area": 25.81,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.58,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F331",
+"area": 14.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.33,
+"d": 8.82,
+"dimSrc": "도면실측"
+},
+{
+"id": "F332",
+"area": 14.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.36,
+"d": 8.82,
+"dimSrc": "도면실측"
+},
+{
+"id": "F333",
+"area": 19.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.23,
+"d": 8.96,
+"dimSrc": "도면실측"
+},
+{
+"id": "F334",
+"area": 19.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.23,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F335",
+"area": 24.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.23,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F336",
+"area": 24.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.23,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F337",
+"area": 24.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.23,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F338",
+"area": 25.78,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 7.23,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F339",
+"area": 19.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F340",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.75,
+"dimSrc": "도면실측"
+},
+{
+"id": "F341",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.82,
+"dimSrc": "도면실측"
+},
+{
+"id": "F342",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F343",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F344",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F345",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F346",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F347",
+"area": 29.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.08,
+"d": 11.36,
+"dimSrc": "도면실측"
+},
+{
+"id": "F348",
+"area": 16.86,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.4,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F349",
+"area": 17.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F350",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F351",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F352",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F353",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F354",
+"area": 17.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F355",
+"area": 18.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F401",
+"area": 38.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F402",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F403",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F404",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F405",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F406",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F407",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F408",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F409",
+"area": 22.81,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 6.88,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F410",
+"area": 42.3,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.89,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "F411",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.71,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F412",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F413",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F414",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F415",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F416",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F417",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.78,
+"dimSrc": "도면실측"
+},
+{
+"id": "F418",
+"area": 28.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F419",
+"area": 27.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 9.81,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F420",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F421",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F422",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F423",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F424",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F425",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F426",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F427",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F428",
+"area": 26.58,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.96,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F429",
+"area": 18.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "F430",
+"area": 33.65,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 10.09,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F431",
+"area": 23.19,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 10.76,
+"dimSrc": "도면실측"
+},
+{
+"id": "F432",
+"area": 18.55,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F433",
+"area": 18.55,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "F434",
+"area": 23.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.02,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F435",
+"area": 23.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "F436",
+"area": 23.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.13,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F437",
+"area": 25.1,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 7.13,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F438",
+"area": 10.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.27,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F439",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.75,
+"dimSrc": "도면실측"
+},
+{
+"id": "F440",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.82,
+"dimSrc": "도면실측"
+},
+{
+"id": "F441",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F442",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F443",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F444",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F445",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F446",
+"area": 29.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.08,
+"d": 11.36,
+"dimSrc": "도면실측"
+},
+{
+"id": "F447",
+"area": 16.86,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.4,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F448",
+"area": 17.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F449",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F450",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F451",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F452",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F453",
+"area": 17.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F454",
+"area": 18.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F501",
+"area": 38.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F502",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F503",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F504",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F505",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F506",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F507",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F508",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F509",
+"area": 22.81,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 6.88,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F510",
+"area": 42.3,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.89,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "F511",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.71,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F512",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F513",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F514",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "F515",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F516",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 8.85,
+"dimSrc": "도면실측"
+},
+{
+"id": "F517",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 8.78,
+"dimSrc": "도면실측"
+},
+{
+"id": "F518",
+"area": 28.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F519",
+"area": 27.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 9.81,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F520",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F521",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F522",
+"area": 25.66,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F523",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F524",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F525",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F526",
+"area": 16.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F527",
+"area": 26.58,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.96,
+"d": 9.81,
+"dimSrc": "도면실측"
+},
+{
+"id": "F528",
+"area": 25.41,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.74,
+"dimSrc": "도면실측"
+},
+{
+"id": "F529",
+"area": 25.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 9.67,
+"dimSrc": "도면실측"
+},
+{
+"id": "F530",
+"area": 18.36,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.75,
+"d": 10.12,
+"dimSrc": "도면실측"
+},
+{
+"id": "F531",
+"area": 30.27,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.68,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F532",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F533",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F534",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F535",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F536",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F537",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F538",
+"area": 18.79,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 11.18,
+"dimSrc": "도면실측"
+},
+{
+"id": "F539",
+"area": 20.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 11.18,
+"d": 5.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "F540",
+"area": 19.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 7.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F541",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F542",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F543",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F544",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F545",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "F546",
+"area": 29.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 8.08,
+"d": 11.36,
+"dimSrc": "도면실측"
+},
+{
+"id": "F547",
+"area": 16.86,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.4,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F548",
+"area": 17.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F549",
+"area": 13.98,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "F550",
+"area": 14.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 10.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB101",
+"area": 62.73,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 10.34,
+"d": 21.77,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB102",
+"area": 21.64,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true
+},
+{
+"id": "FB103",
+"area": 22.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB104",
+"area": 22.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB105",
+"area": 22.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB106",
+"area": 22.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB107",
+"area": 22.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB108",
+"area": 17.82,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB109",
+"area": 17.82,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB110",
+"area": 17.82,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB111",
+"area": 18.76,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 13.37,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB112",
+"area": 15.47,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true
+},
+{
+"id": "FB113",
+"area": 16.6,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true
+},
+{
+"id": "FB201",
+"area": 9.64,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB202",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB203",
+"area": 17.64,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB204",
+"area": 17.64,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB205",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB206",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB207",
+"area": 15.19,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.15,
+"d": 9.28,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB208",
+"area": 9.27,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 3.88,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB209",
+"area": 9.15,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 3.88,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB210",
+"area": 9.15,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 3.85,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB211",
+"area": 9.27,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 3.85,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB212",
+"area": 10.36,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 3.63,
+"d": 8.96,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB213",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB214",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB215",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB216",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB217",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB218",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB219",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB220",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB221",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB222",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB223",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB224",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB225",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB226",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true
+},
+{
+"id": "FB227",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB228",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB229",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB230",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB231",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB232",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB233",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB234",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB235",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.68,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB236",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB237",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.48,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB238",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB239",
+"area": 12.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 4.44,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB240",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.64,
+"d": 9.35,
+"dimSrc": "도면실측"
+},
+{
+"id": "FB241",
+"area": 16.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"drive": true,
+"w": 5.4,
+"d": 9.31,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1001",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1002",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1003",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1004",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1005",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1006",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1007",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1008",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1009",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1010",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1011",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1012",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1013",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1014",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1015",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1016",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1017",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1018",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1019",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1101",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1102",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1103",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1104",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1105",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1106",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1107",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1108",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1109",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1110",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1111",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1112",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1113",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1114",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1115",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1116",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1117",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1118",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1119",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1201",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1202",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1203",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1204",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1205",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1206",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1207",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1208",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1209",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1210",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1211",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1212",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1213",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1214",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1215",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1216",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1217",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1218",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1219",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1301",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1302",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1303",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1304",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1305",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1306",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1307",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1308",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1309",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1310",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1311",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1312",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1313",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1314",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1315",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1316",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1317",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1318",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1319",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1401",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1402",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1403",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1404",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1405",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1406",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1407",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1408",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1409",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1410",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1411",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1412",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1413",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1414",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1415",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1416",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1417",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1418",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1419",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1501",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1502",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1503",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1504",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1505",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1506",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1507",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1508",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1509",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1510",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1511",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1512",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1513",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1514",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1515",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1516",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1517",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1518",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1519",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1601",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1602",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1603",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1604",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1605",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1606",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1607",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1608",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1609",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1610",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1611",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1612",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1613",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1614",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1615",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1616",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1617",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1618",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1619",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1701",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1702",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1703",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1704",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1705",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1706",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1707",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1708",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1709",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1710",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1711",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1712",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1713",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1714",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1715",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1716",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1717",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1718",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1719",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KA1801",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1802",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1803",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1804",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1805",
+"area": 32.76,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1806",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1807",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1808",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1809",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1810",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1811",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1812",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1813",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1814",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1815",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1816",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1817",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1818",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1819",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1901",
+"area": 22.57,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.25,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1902",
+"area": 25.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 9.24,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1903",
+"area": 32.76,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 9.49,
+"d": 10.97,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1904",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1905",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1906",
+"area": 39.56,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1907",
+"area": 27.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 7.87,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1908",
+"area": 29.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1909",
+"area": 29.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA1910",
+"area": 31.82,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.89,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2001",
+"area": 22.57,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.25,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2002",
+"area": 25.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 9.24,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2003",
+"area": 32.76,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 9.49,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2004",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2005",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2006",
+"area": 39.56,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2007",
+"area": 27.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 7.87,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2008",
+"area": 29.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2009",
+"area": 29.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA2010",
+"area": 31.82,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.89,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA601",
+"area": 22.57,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.25,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA602",
+"area": 25.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.11,
+"d": 9.24,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA603",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA604",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA605",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA606",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA607",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA608",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA609",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA610",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA611",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA612",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA613",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA614",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA615",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA616",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA617",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA701",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA702",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA703",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA704",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA705",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA706",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA707",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA708",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA709",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA710",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA711",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA712",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA713",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA714",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA715",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA716",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA717",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA718",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA719",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA801",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA802",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA803",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA804",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA805",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA806",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA807",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA808",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA809",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA810",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA811",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA812",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA813",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA814",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA815",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA816",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA817",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA818",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA819",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA901",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA902",
+"area": 10.04,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA903",
+"area": 11.05,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.2,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA904",
+"area": 14.06,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 5.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA905",
+"area": 33.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 9.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA906",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA907",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA908",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA909",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA910",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA911",
+"area": 20.94,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 5.86,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA912",
+"area": 13.51,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA913",
+"area": 14.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA914",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA915",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA916",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA917",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA918",
+"area": 14.74,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.32,
+"dimSrc": "도면실측"
+},
+{
+"id": "KA919",
+"area": 17.09,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.69,
+"d": 11.29,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1001",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1002",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1003",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1004",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1005",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1006",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1007",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1008",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1009",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1010",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1011",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1012",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1013",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1014",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1015",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1016",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1017",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1018",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1019",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1020",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1021",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1022",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1023",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1024",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1025",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1026",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1027",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1028",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1029",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1030",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1031",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1032",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1033",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1034",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1035",
+"area": 36.53,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 8.71,
+"d": 12.88,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1036",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.9,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1037",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1038",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1039",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1040",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1041",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1042",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.9,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1101",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1102",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1103",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1104",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1105",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1106",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1107",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1108",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1109",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1110",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1111",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1112",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1113",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1114",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1115",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1116",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1117",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1118",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1119",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1120",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1121",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1122",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1123",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1124",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1125",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1126",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1127",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1128",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1129",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1130",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1131",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1132",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1133",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1134",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1135",
+"area": 25.1,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 8.68,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1136",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.97,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1137",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1138",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1139",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.94,
+"d": 5.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1201",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1202",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1203",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1204",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1205",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1206",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1207",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1208",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1209",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1210",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1211",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1212",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1213",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1214",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1215",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1216",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1217",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1218",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1219",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1220",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1221",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1222",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1223",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1224",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1225",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1226",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1227",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1228",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1229",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1230",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1231",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1232",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1233",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1234",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1235",
+"area": 13.52,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 9.24,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1236",
+"area": 12.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.44,
+"d": 9.24,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1237",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.9,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1238",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1239",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1240",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1241",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.9,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1301",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1302",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1303",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1304",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1305",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1306",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1307",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1308",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1309",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1310",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1311",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1312",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1313",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1314",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1315",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1316",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1317",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1318",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1319",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1320",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1321",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1322",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1323",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1324",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1325",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1326",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1327",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1328",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1329",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1330",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1331",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1332",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1333",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1334",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1335",
+"area": 13.45,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1336",
+"area": 21.1,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.37,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1337",
+"area": 25.15,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.97,
+"d": 9.91,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1338",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1339",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1340",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.94,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1401",
+"area": 12.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1402",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1403",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1404",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1405",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1406",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1407",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1408",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1409",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1410",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1411",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1412",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1413",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1414",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1415",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1416",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1417",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1418",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1419",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1420",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1421",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1422",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1423",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1424",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1425",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1426",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1427",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1428",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1429",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1430",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1431",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1432",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1433",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1434",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1435",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1436",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1437",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1501",
+"area": 12.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1502",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1503",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1504",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1505",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1506",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1507",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1508",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1509",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1510",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1511",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1512",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1513",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1514",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1515",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1516",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1517",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1518",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1519",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1520",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1521",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1522",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1523",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1524",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1525",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1526",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1527",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1528",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1529",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1530",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1531",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1532",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1533",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1534",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1535",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1536",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1537",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1601",
+"area": 12.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1602",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1603",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1604",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1605",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1606",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1607",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1608",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1609",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1610",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1611",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1612",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1613",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1614",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1615",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1616",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1617",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1618",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1619",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1620",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1621",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1622",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1623",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1624",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1625",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1626",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1627",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1628",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1629",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1630",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1631",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1632",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1633",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1634",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1635",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1636",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1637",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1701",
+"area": 12.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1702",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1703",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1704",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1705",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1706",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1707",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1708",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1709",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1710",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1711",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1712",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1713",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1714",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1715",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1716",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1717",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1718",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1719",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1720",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1721",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1722",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1723",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1724",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1725",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1726",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1727",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1728",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1729",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1730",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1731",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1732",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1733",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1734",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1735",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1736",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1737",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "동일평면층"
+},
+{
+"id": "KB1801",
+"area": 12.03,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1802",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1803",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1804",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1805",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1806",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1807",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1808",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1809",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1810",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1811",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1812",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1813",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1814",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1815",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1816",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1817",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1818",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1819",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1820",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1821",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1822",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1823",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1824",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1825",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1826",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1827",
+"area": 24.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1828",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1829",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1830",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1831",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1832",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1833",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1834",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1835",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1836",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1837",
+"area": 16.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1901",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1902",
+"area": 20.58,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1903",
+"area": 25.41,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.11,
+"d": 9.67,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1904",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1905",
+"area": 27.44,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.08,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1906",
+"area": 23.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1907",
+"area": 31.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1908",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1909",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1910",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1911",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1912",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1913",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.08,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1914",
+"area": 43.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 12.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1915",
+"area": 27.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 7.87,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1916",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1917",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1918",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB1919",
+"area": 30.59,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2001",
+"area": 22.7,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2002",
+"area": 20.58,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2003",
+"area": 25.41,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.15,
+"d": 9.67,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2004",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2005",
+"area": 27.44,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.15,
+"d": 11.04,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2006",
+"area": 23.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2007",
+"area": 31.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2008",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2009",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2010",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2011",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2012",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2013",
+"area": 37.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 11.08,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2014",
+"area": 43.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 12.49,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2015",
+"area": 27.24,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 7.87,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2016",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2017",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2018",
+"area": 28.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB2019",
+"area": 30.59,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.68,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB601",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB602",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB603",
+"area": 16.26,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 6.39,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB604",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB605",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB606",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB607",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB608",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB609",
+"area": 23.21,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.11,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB610",
+"area": 31.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 8.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB611",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB612",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB613",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB614",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB615",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB616",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB617",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB618",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB619",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB620",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB621",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB622",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB623",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB624",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB625",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB626",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB627",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB628",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB629",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB630",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB631",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.16,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB632",
+"area": 23.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB633",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB634",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB635",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB636",
+"area": 24.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.68,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB637",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.87,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB638",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB639",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB640",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB641",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB642",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB643",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB644",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB645",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB646",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB647",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.9,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB701",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB702",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB703",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB704",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB705",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB706",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB707",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB708",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB709",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB710",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB711",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB712",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB713",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB714",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB715",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB716",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB717",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB718",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB719",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB720",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB721",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB722",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB723",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB724",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB725",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB726",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB727",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB728",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB729",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB730",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB731",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB732",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB733",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB734",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB735",
+"area": 23.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB736",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB737",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB738",
+"area": 24.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 8.68,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB739",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.97,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB740",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB741",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB742",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB743",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB744",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB745",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB746",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB747",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB748",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.94,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB801",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB802",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB803",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB804",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB805",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB806",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB807",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB808",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB809",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB810",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB811",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB812",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.08,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB813",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB814",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB815",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB816",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB817",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB818",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB819",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB820",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB821",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB822",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB823",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB824",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB825",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.08,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB826",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB827",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB828",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB829",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB830",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB831",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB832",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB833",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB834",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB835",
+"area": 23.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.64,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB836",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB837",
+"area": 24.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 8.68,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB838",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.9,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB839",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB840",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB841",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB842",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB843",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB844",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB845",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.9,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB846",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.9,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB901",
+"area": 11.43,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB902",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB903",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB904",
+"area": 9.91,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.85,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB905",
+"area": 11.18,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.37,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB906",
+"area": 14.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.57,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB907",
+"area": 10.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.13,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB908",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB909",
+"area": 13.72,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.68,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB910",
+"area": 10.67,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 8.15,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB911",
+"area": 12.54,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 8.15,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB912",
+"area": 16.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 4.69,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB913",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB914",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB915",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB916",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB917",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB918",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB919",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB920",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB921",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB922",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB923",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.48,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB924",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB925",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB926",
+"area": 18.62,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB927",
+"area": 25.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 11.11,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB928",
+"area": 13.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 3.81,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB929",
+"area": 13.97,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.3,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB930",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB931",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB932",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB933",
+"area": 14.48,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB934",
+"area": 27.93,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.04,
+"d": 11.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB935",
+"area": 23.69,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 8.61,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB936",
+"area": 24.28,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 8.61,
+"d": 8.71,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB937",
+"area": 22.17,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 7.97,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB938",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB939",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB940",
+"area": 10.42,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 4.44,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB941",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB942",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB943",
+"area": 13.39,
+"dir": null,
+"sink": null,
+"blind": null,
+"w": 5.64,
+"d": 7.94,
+"dimSrc": "도면실측"
+},
+{
+"id": "KB944",
+"area": 15.23,
+"dir": null,
+"sink": null,
+"blind": null,
+"corner": [
+"",
+""
+],
+"w": 7.94,
+"d": 5.89,
+"dimSrc": "도면실측"
+},
+{
+"id": "C501",
+"area": 11.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C502",
+"area": 11.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.77,
+"d": 8.64,
+"dimSrc": "도면실측"
+},
+{
+"id": "C503",
+"area": 10.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.53,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C504",
+"area": 12.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.37,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C505",
+"area": 12.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 8.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C506",
+"area": 14.22,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 9.63,
+"dimSrc": "도면실측"
+},
+{
+"id": "C507",
+"area": 14.22,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 9.63,
+"dimSrc": "도면실측"
+},
+{
+"id": "C508",
+"area": 12.4,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 9.63,
+"dimSrc": "도면실측"
+},
+{
+"id": "C509",
+"area": 12.4,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 9.63,
+"dimSrc": "도면실측"
+},
+{
+"id": "C510",
+"area": 11.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.46,
+"d": 9.63,
+"dimSrc": "도면실측"
+},
+{
+"id": "C601",
+"area": 8.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 6.7,
+"dimSrc": "도면실측"
+},
+{
+"id": "C602",
+"area": 6.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 5.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C603",
+"area": 6.33,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.42,
+"d": 5.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C604",
+"area": 9.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.37,
+"d": 6.67,
+"dimSrc": "도면실측"
+},
+{
+"id": "C605",
+"area": 7.96,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 5.68,
+"dimSrc": "도면실측"
+},
+{
+"id": "C606",
+"area": 11.37,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "C607",
+"area": 9.95,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 4.34,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "C608",
+"area": 9.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 8.11,
+"dimSrc": "도면실측"
+},
+{
+"id": "C609",
+"area": 8.61,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.74,
+"d": 7.09,
+"dimSrc": "도면실측"
+},
+{
+"id": "C610",
+"area": 9.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true,
+"w": 3.56,
+"d": 8.11,
+"dimSrc": "도면실측"
+}
+]
