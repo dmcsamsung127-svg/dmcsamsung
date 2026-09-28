@@ -271,7 +271,7 @@ const COL = {
 function renderUnit(u, st) {
   const VW = 1000, VH = 720;
   const H = floorHeight(u.id);
-  const T = 0.18;            // 벽 두께
+  const T = 0.20;            // 벽 두께 20cm (사용자 제공)
   const HC = 0.22;           // 전면 절단벽 높이
   const rooms = (u.rooms || [{ id: u.id, area: u.area }]).map(r => {
     const fbDepth = { "2": 9.5, "1": 13.5 }[u.id.startsWith("FB") ? u.id[2] : ""];
