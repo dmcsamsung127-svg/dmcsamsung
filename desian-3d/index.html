@@ -214,19 +214,20 @@ const UNITS = [
     note: "층고 약 3M(FB102 2.94m · FB103 2.99m) · 출입문 2.10×2.12m · 따로/합쳐서 가능" },
   { id: "KA1906", area: 39.56, dir: "남동향 코너", corner: ["남", "동"], sink: null, blind: null },
   { id: "KB1710", area: 10.67, dir: "서향",  sink: null, blind: null },
-  { id: "KB1630", area: 13.97, dir: "남향",  sink: null, blind: null },
+  { id: "KB1630", area: 14.48, dir: "남향",  sink: null, blind: null },
   { id: "FB111", height: 3.0,  area: 18.75, dir: null,    sink: null, blind: null, drive: true },
   { id: "KB611",  area: 18.62, dir: "동향",  sink: null, blind: null },
-  { id: "KB1135", area: 25,    dir: null,    sink: null, blind: null },
+  { id: "KB1135", area: 25.1, terrace: true,    dir: null,    sink: null, blind: null },
 ];
 
 const M2_PER_PY = 3.305785;
 
-/* 층별 천장 높이 (사용자 제공): 지하1·2층 3.0M, 2~5층 3.9M, 6~20층 2.7M */
+/* 층별 천장 높이 (사용자 제공): 지하1·2층 3.0M, 1층 F호실 4.0M, 2~5층 3.9M, 6~20층 2.7M */
 function floorHeight(id) {
-  const m = id.match(/^(KA|KB|FB|F)(\d+)/);
+  const m = id.match(/^(KA|KB|FB|F|C)(\d+)/);
   if (m[1] === "FB") return 3.0;
   const fl = parseInt(m[2].slice(0, -2), 10);
+  if (fl === 1) return 4.0;
   return fl <= 5 ? 3.9 : 2.7;
 }
 

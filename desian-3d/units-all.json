@@ -39,7 +39,11 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"drive": true
+"drive": true,
+"corner": [
+"",
+""
+]
 },
 {
 "id": "F106",
@@ -47,7 +51,11 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"drive": true
+"drive": true,
+"corner": [
+"",
+""
+]
 },
 {
 "id": "F107",
@@ -95,7 +103,11 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"drive": true
+"drive": true,
+"corner": [
+"",
+""
+]
 },
 {
 "id": "F113",
@@ -8865,5 +8877,165 @@
 "",
 ""
 ]
+},
+{
+"id": "C501",
+"area": 11.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C502",
+"area": 11.16,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C503",
+"area": 10.35,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C504",
+"area": 12.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C505",
+"area": 12.8,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C506",
+"area": 14.22,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C507",
+"area": 14.22,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C508",
+"area": 12.4,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C509",
+"area": 12.4,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C510",
+"area": 11.5,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C601",
+"area": 8.11,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C602",
+"area": 6.87,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C603",
+"area": 6.33,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C604",
+"area": 9.38,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C605",
+"area": 7.96,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C606",
+"area": 11.37,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C607",
+"area": 9.95,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C608",
+"area": 9.85,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C609",
+"area": 8.61,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
+},
+{
+"id": "C610",
+"area": 9.08,
+"dir": null,
+"sink": null,
+"blind": null,
+"terrace": true
 }
 ]
