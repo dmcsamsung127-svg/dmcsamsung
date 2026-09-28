@@ -34,7 +34,7 @@ for (const id of units) {
   await page.evaluate(({ id, all }) => {
     const u = { ...all.find(x => x.id === id), ...UNITS.find(x => x.id === id) };   // 매물장 정보 우선, 코너·테라스는 도면 기준 유지
     const st = { sink: !!u.sink, blind: !!u.blind, curtain: !!u.curtain, clean: true,
-                 balcony: !u.id.startsWith("FB") && !u.terrace && !u.noWin };
+                 balcony: !u.id.startsWith("FB") && !u.terrace && !u.noWin && !/^C\d/.test(u.id) };
     document.getElementById("grid").innerHTML = `<div class="sheet" id="one">${renderUnit(u, st)}</div>`;
   }, { id, all });
   mkdirSync(join(outDir, id), { recursive: true });
