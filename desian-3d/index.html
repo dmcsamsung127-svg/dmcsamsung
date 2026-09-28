@@ -284,7 +284,8 @@ function renderUnit(u, st) {
   rooms.forEach(r => { r.ox = ox; ox += r.w; });
   const W = ox, D = Math.max(...rooms.map(r => r.d));
   const hasWin = !u.id.startsWith("FB") && !u.noWin;   // 지하(FB)·1층 내부형 호실은 창 없음
-  const isC = /^C\d/.test(u.id);          // C호실: 정원형 통유리(현장 사진 기준)
+  const isC = /^C\d/.test(u.id);
+  const upperH = /^C5\d\d$/.test(u.id) ? 2.7 : 0;   // C5xx 복층 위층 높이          // C호실: 정원형 통유리(현장 사진 기준)
   const win = { sill: isC ? 0.05 : 0.12, head: H - (isC ? 0.15 : 0.3) };
 
   const ops = [];
@@ -496,7 +497,15 @@ function renderUnit(u, st) {
     for (let k = 1; k < 3; k++) line([[0.35, y0 + L * k / 3, 1.58], [0.35, y0 + L * k / 3, 2.22]], { stroke: COL.edge, sw: 0.8 });
   }
 
-  /* 4-1. C5xx 복층: 출입문 옆 나선계단(현장 사진 기준) */
+  /* 4-1. C5xx 복층: 위층(2.7M, 사용자 제공)은 점선 윤곽 + 나선계단(현장 사진 기준) */
+  if (upperH) {
+    const z0 = H + 0.2, z1 = H + 0.2 + upperH, G = { stroke: "#8f8a80", sw: 1.3, dash: "7 5" };
+    [[[-T, -T], [W, -T]], [[W, -T], [W, D]], [[-T, -T], [-T, D]], [[-T, D], [W, D]]].forEach(([a, b]) => {
+      line([[a[0], a[1], z1], [b[0], b[1], z1]], G);
+    });
+    [[-T, -T], [W, -T], [W, D], [-T, D]].forEach(([x, y]) => line([[x, y, z0], [x, y, z1]], G));
+    poly([[-T, -T, z0], [W, -T, z0], [W, D, z0], [-T, D, z0]], { fill: "#ffffff", op: 0.0, stroke: "#8f8a80", sw: 1.3 });
+  }
   if (/^C5\d\d$/.test(u.id)) {
     const r0 = 0.8, cx = r0 + 0.25, cy = D * 0.45, steps = 14;
     const col = [];
@@ -562,6 +571,11 @@ function renderUnit(u, st) {
     const hp = [-T - 0.5, D + T + 0.5];
     dimOps.push({ t: "line", pts: [[hp[0], hp[1], 0], [hp[0], hp[1], H]], stroke: DIM, sw: 2 });
     [0, H].forEach(zz => dimOps.push({ t: "line", pts: [[hp[0] - 0.15, hp[1] + 0.15, zz], [hp[0] + 0.15, hp[1] - 0.15, zz]], stroke: DIM, sw: 2 }));
+    if (upperH) {   // C5xx 위층 높이
+      dimOps.push({ t: "line", pts: [[hp[0], hp[1], H], [hp[0], hp[1], H + upperH]], stroke: DIM, sw: 2 });
+      dimOps.push({ t: "line", pts: [[hp[0] - 0.15, hp[1] + 0.15, H + upperH], [hp[0] + 0.15, hp[1] - 0.15, H + upperH]], stroke: DIM, sw: 2 });
+      dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H + upperH / 2], str: `${upperH.toFixed(1)}M`, fill: DIM });
+    }
     dimOps.push({ t: "vtext", left: true, at: [hp[0], hp[1], H / 2], str: st.clean ? `${H.toFixed(1)}M` : `높이 ${H.toFixed(1)}m`, fill: DIM });
     }
   }
