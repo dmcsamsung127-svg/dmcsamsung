@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KB부동산 매물 "기타주소1" 우측상단 표시
 // @namespace    dmc.starhub.kbland
-// @version      1.2.0
+// @version      1.2.1
 // @description  KB부동산(kbland.kr)에서 매물을 클릭할 때 호출되는 bascInfo API 응답을 가로채, "기타주소1" 값을 화면 우측 상단 오버레이에 표시합니다. 클릭하면 값이 복사됩니다.
 // @author       신소장
 // @match        https://www.kbland.kr/*
@@ -29,7 +29,7 @@
     console.warn('[KB 기타주소1]', ...args);
   }
 
-  log('스크립트 로드됨 v1.2.0 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
+  log('스크립트 로드됨 v1.2.1 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
 
   // 좌측 매물 리스트 바로 옆(맵 영역 맨 왼쪽 위)에 붙도록 기본 위치를 잡습니다.
   // 헤더 부분을 드래그하면 원하는 위치로 옮길 수 있고, 옮긴 위치는 기억됩니다.
@@ -548,4 +548,13 @@
 
   // 페이지 로드 시 오버레이 미리 준비 (document-start라 body가 생기면 부착됩니다)
   ensureOverlay();
+
+  // KB부동산 앱이 로딩 중에 화면(body)을 다시 그리면서 오버레이를 지워버리는 경우가 있어,
+  // 사라졌으면 다시 붙입니다. (사용자가 × 로 숨긴 경우는 display:none 이라 그대로 유지)
+  setInterval(() => {
+    if (overlayEl && document.body && !document.body.contains(overlayEl) && !overlayEl.__kbPendingAttach) {
+      document.body.appendChild(overlayEl);
+      log('사라진 오버레이를 다시 부착했습니다.');
+    }
+  }, 1000);
 })();
