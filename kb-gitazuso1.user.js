@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KB부동산 매물 "기타주소1" 우측상단 표시
 // @namespace    dmc.starhub.kbland
-// @version      1.2.1
+// @version      1.2.2
 // @description  KB부동산(kbland.kr)에서 매물을 클릭할 때 호출되는 bascInfo API 응답을 가로채, "기타주소1" 값을 화면 우측 상단 오버레이에 표시합니다. 클릭하면 값이 복사됩니다.
 // @author       신소장
 // @match        https://www.kbland.kr/*
@@ -29,7 +29,7 @@
     console.warn('[KB 기타주소1]', ...args);
   }
 
-  log('스크립트 로드됨 v1.2.1 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
+  log('스크립트 로드됨 v1.2.2 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
 
   // 좌측 매물 리스트 바로 옆(맵 영역 맨 왼쪽 위)에 붙도록 기본 위치를 잡습니다.
   // 헤더 부분을 드래그하면 원하는 위치로 옮길 수 있고, 옮긴 위치는 기억됩니다.
@@ -101,6 +101,7 @@
   let subEl = null;
   let statusEl = null;
   let shownMatId = null;
+  let hintEl = null;
 
   let dragListenersBound = false;
   let dragState = null;
@@ -181,10 +182,14 @@
     subEl = document.createElement('div');
     subEl.style.cssText = 'font-size:11px;color:#999;margin-top:4px;';
 
+    hintEl = document.createElement('div');
+    hintEl.style.cssText = 'font-size:12px;color:#555;margin-top:6px;white-space:pre-wrap;word-break:break-all;max-height:160px;overflow:auto;';
+
     statusEl = document.createElement('div');
     statusEl.style.cssText = 'font-size:11px;color:#2f8f4e;margin-top:4px;height:14px;';
 
     body.appendChild(valueEl);
+    body.appendChild(hintEl);
     body.appendChild(subEl);
     body.appendChild(statusEl);
 
@@ -271,8 +276,9 @@
     }
   }
 
-  function showValue(value, matchId) {
+  function showValue(value, matchId, hints) {
     ensureOverlay();
+    hintEl.textContent = hints && hints.length ? '다른 주소 관련 항목:\n' + hints.join('\n') : '';
     overlayEl.style.display = 'block';
     if (value === null || value === undefined || value === '') {
       valueEl.textContent = '(값 없음)';
@@ -299,6 +305,7 @@
   function showNotFound(matchId) {
     ensureOverlay();
     overlayEl.style.display = 'block';
+    hintEl.textContent = '';
     valueEl.textContent = '기타주소1 항목을 찾지 못했습니다 (콘솔 확인)';
     valueEl.dataset.rawValue = '';
     valueEl.style.opacity = '1';
@@ -346,6 +353,27 @@
     }
 
     return walk(obj, '') || firstEmpty;
+  }
+
+  // 기타주소1이 비어 있을 때 참고용으로 보여줄 주소 관련 항목들 (키에 주소/동/호/층 포함)
+  const HINT_KEY_PATTERN = /주소|동명|호수|호명|^호$|동$|번지|지번|도로명/;
+  function collectAddressHints(obj) {
+    const out = [];
+    const seen = new Set();
+    (function walk(node) {
+      if (!node || typeof node !== 'object' || seen.has(node) || out.length >= 12) return;
+      seen.add(node);
+      for (const k of Object.keys(node)) {
+        const v = node[k];
+        if (v && typeof v === 'object') {
+          walk(v);
+        } else if (!Array.isArray(node) && HINT_KEY_PATTERN.test(k) && normKey(k) !== normKey(TARGET_KEY) && !isEmptyValue(v)) {
+          const line = `${k}: ${v}`;
+          if (out.indexOf(line) === -1) out.push(line);
+        }
+      }
+    })(obj);
+    return out;
   }
 
   function extractMatId(url) {
@@ -402,7 +430,13 @@
     if (found) {
       log(`발견 (경로: ${found.path}):`, found.value);
       if (matId) resultCache.set(String(matId), found.value);
-      showValue(found.value, matId);
+      if (isEmptyValue(found.value)) {
+        const hints = collectAddressHints(json);
+        warn('기타주소1이 비어 있습니다. 전체 응답:', json);
+        showValue(found.value, matId, hints);
+      } else {
+        showValue(found.value, matId);
+      }
     } else {
       warn('키를 찾지 못했습니다. 전체 응답:', json);
       showNotFound(matId);
