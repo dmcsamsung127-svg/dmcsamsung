@@ -1,0 +1,48 @@
+// KB부동산 호수 진단 코드 — 콘솔에 붙여넣은 뒤 매물을 클릭하세요 (새로고침하면 사라짐)
+(function () {
+  const KEY_RE = /기타주소|호수|호명|동호|상세주소|상세번지|건물동|호$|ho|dong/i;
+  const VAL_RE = /\d{1,5}\s*호|\d{1,4}\s*동\s*\d{1,5}/;
+  const found = [];
+  function scan(url, obj) {
+    const hits = [];
+    const seen = new Set();
+    (function walk(n, path) {
+      if (!n || typeof n !== 'object' || seen.has(n)) return;
+      seen.add(n);
+      for (const k of Object.keys(n)) {
+        const v = n[k], p = path ? path + '.' + k : k;
+        if (v && typeof v === 'object') walk(v, p);
+        else if (v !== null && v !== '' && (KEY_RE.test(k) || (typeof v === 'string' && VAL_RE.test(v))))
+          hits.push(p + ' = ' + v);
+      }
+    })(obj, '');
+    const short = url.replace(/^https?:\/\/[^/]+/, '').split('?')[0];
+    if (hits.length) {
+      console.log('%c[호수진단] ' + short, 'color:#fff;background:#d33;padding:2px 6px', '\n' + hits.join('\n'));
+      found.push({ url: short, hits });
+    } else {
+      console.log('[호수진단] (관련 값 없음) ' + short);
+    }
+  }
+  function handle(url, text) {
+    if (!/kbland/.test(url) && !/^\//.test(url)) return;
+    try { scan(url, typeof text === 'string' ? JSON.parse(text) : text); } catch (e) { /* JSON 아님 */ }
+  }
+  const oOpen = XMLHttpRequest.prototype.open, oSend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.open = function (m, u) { this.__diagUrl = String(u); return oOpen.apply(this, arguments); };
+  XMLHttpRequest.prototype.send = function () {
+    this.addEventListener('load', function () {
+      try { handle(this.__diagUrl, this.responseType && this.responseType !== 'text' ? this.response : this.responseText); } catch (e) {}
+    });
+    return oSend.apply(this, arguments);
+  };
+  const oFetch = window.fetch;
+  window.fetch = function (input) {
+    const url = typeof input === 'string' ? input : (input && (input.url || input.href)) || '';
+    const pr = oFetch.apply(this, arguments);
+    pr.then(r => r.clone().text().then(t => handle(url, t))).catch(() => {});
+    return pr;
+  };
+  window.__호수진단결과 = found;
+  console.log('%c[호수진단] 준비 완료 — 이제 매물을 클릭하세요', 'color:#fff;background:#2a7;padding:2px 6px');
+})();
