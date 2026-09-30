@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         KB부동산 매물 "기타주소1" 우측상단 표시
 // @namespace    dmc.starhub.kbland
-// @version      1.1.4
+// @version      1.2.0
 // @description  KB부동산(kbland.kr)에서 매물을 클릭할 때 호출되는 bascInfo API 응답을 가로채, "기타주소1" 값을 화면 우측 상단 오버레이에 표시합니다. 클릭하면 값이 복사됩니다.
 // @author       신소장
 // @match        https://www.kbland.kr/*
 // @match        https://kbland.kr/*
 // @match        https://*.kbland.kr/*
-// @run-at       document-idle
+// @run-at       document-start
 // @grant        none
 // ==/UserScript==
 
@@ -29,7 +29,7 @@
     console.warn('[KB 기타주소1]', ...args);
   }
 
-  log('스크립트 로드됨 v1.1.4 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
+  log('스크립트 로드됨 v1.2.0 — 이 로그가 안 보이면 Tampermonkey가 이 페이지에 스크립트를 실행하지 않은 것입니다.');
 
   // 좌측 매물 리스트 바로 옆(맵 영역 맨 왼쪽 위)에 붙도록 기본 위치를 잡습니다.
   // 헤더 부분을 드래그하면 원하는 위치로 옮길 수 있고, 옮긴 위치는 기억됩니다.
@@ -100,9 +100,20 @@
   let valueEl = null;
   let subEl = null;
   let statusEl = null;
+  let shownMatId = null;
+
+  let dragListenersBound = false;
+  let dragState = null;
 
   function ensureOverlay() {
-    if (overlayEl && document.body && document.body.contains(overlayEl)) {
+    // document-start 시점에는 body가 아직 없어서 부착 대기 중일 수 있으므로,
+    // 이미 만든 오버레이가 있으면 (부착 전이라도) 다시 만들지 않습니다.
+    if (overlayEl && (overlayEl.__kbPendingAttach || (document.body && document.body.contains(overlayEl)))) {
+      return overlayEl;
+    }
+    if (overlayEl && document.body && !document.body.contains(overlayEl)) {
+      // 페이지(SPA)가 body를 다시 그리면서 오버레이가 빠진 경우: 기존 요소를 재부착
+      document.body.appendChild(overlayEl);
       return overlayEl;
     }
 
@@ -187,44 +198,38 @@
     });
 
     // ---- 드래그 처리 ----
-    let dragging = false;
-    let dragStartX = 0;
-    let dragStartY = 0;
-    let boxStartLeft = 0;
-    let boxStartTop = 0;
-
     header.addEventListener('mousedown', (e) => {
-      dragging = true;
-      dragStartX = e.clientX;
-      dragStartY = e.clientY;
       const rect = overlayEl.getBoundingClientRect();
-      boxStartLeft = rect.left;
-      boxStartTop = rect.top;
+      dragState = { x: e.clientX, y: e.clientY, left: rect.left, top: rect.top };
       e.preventDefault();
     });
 
-    window.addEventListener('mousemove', (e) => {
-      if (!dragging) return;
-      const newLeft = boxStartLeft + (e.clientX - dragStartX);
-      const newTop = boxStartTop + (e.clientY - dragStartY);
-      overlayEl.style.left = `${newLeft}px`;
-      overlayEl.style.top = `${newTop}px`;
-      overlayEl.style.right = 'auto';
-    });
+    // window 리스너는 오버레이를 다시 만들더라도 한 번만 등록합니다.
+    if (!dragListenersBound) {
+      dragListenersBound = true;
+      window.addEventListener('mousemove', (e) => {
+        if (!dragState || !overlayEl) return;
+        overlayEl.style.left = `${dragState.left + (e.clientX - dragState.x)}px`;
+        overlayEl.style.top = `${dragState.top + (e.clientY - dragState.y)}px`;
+        overlayEl.style.right = 'auto';
+      });
+      window.addEventListener('mouseup', () => {
+        if (!dragState || !overlayEl) return;
+        dragState = null;
+        const rect = overlayEl.getBoundingClientRect();
+        savePos({ top: Math.round(rect.top), left: Math.round(rect.left) });
+        log('오버레이 위치 저장:', Math.round(rect.left), Math.round(rect.top));
+      });
+    }
 
-    window.addEventListener('mouseup', () => {
-      if (!dragging) return;
-      dragging = false;
-      const rect = overlayEl.getBoundingClientRect();
-      savePos({ top: Math.round(rect.top), left: Math.round(rect.left) });
-      log('오버레이 위치 저장:', Math.round(rect.left), Math.round(rect.top));
-    });
-
+    const el = overlayEl;
     const attach = () => {
       if (document.body) {
-        document.body.appendChild(overlayEl);
+        el.__kbPendingAttach = false;
+        document.body.appendChild(el);
         log('오버레이 박스를 화면에 부착했습니다.');
       } else {
+        el.__kbPendingAttach = true;
         document.addEventListener('DOMContentLoaded', attach, { once: true });
       }
     };
@@ -236,6 +241,7 @@
   function copyToClipboard(text) {
     const done = () => {
       if (statusEl) {
+        statusEl.style.color = '#2f8f4e';
         statusEl.textContent = '복사됨!';
         setTimeout(() => {
           if (statusEl) statusEl.textContent = '';
@@ -277,6 +283,17 @@
     }
     subEl.textContent = matchId ? `매물일련번호: ${matchId}` : '';
     statusEl.textContent = '';
+    valueEl.style.opacity = '1';
+    shownMatId = matchId || null;
+  }
+
+  // 페이지가 캐시된 데이터를 재사용해서 새 API 호출이 없을 때,
+  // 이전 매물 값이 그대로 남아 있음을 표시합니다.
+  function markStale() {
+    if (!valueEl || !valueEl.dataset.rawValue) return;
+    valueEl.style.opacity = '0.45';
+    statusEl.style.color = '#c77700';
+    statusEl.textContent = '이전 매물 값일 수 있음 (새 조회 없음)';
   }
 
   function showNotFound(matchId) {
@@ -284,33 +301,51 @@
     overlayEl.style.display = 'block';
     valueEl.textContent = '기타주소1 항목을 찾지 못했습니다 (콘솔 확인)';
     valueEl.dataset.rawValue = '';
+    valueEl.style.opacity = '1';
     subEl.textContent = matchId ? `매물일련번호: ${matchId}` : '';
     statusEl.textContent = '';
+    shownMatId = matchId || null;
   }
 
   // ---------------------------------------------------------------------
   // 응답 데이터에서 재귀적으로 TARGET_KEY 찾기
   // ---------------------------------------------------------------------
-  function findKeyDeep(obj, key, path = '') {
-    if (obj === null || typeof obj !== 'object') return null;
+  // 키 이름의 공백 차이("기타주소 1" 등)는 무시하고, 같은 키가 여러 곳에 있으면
+  // 값이 비어있지 않은 것을 우선합니다. (첫 번째가 null이면 뒤의 실제 값을 놓치던 문제)
+  function normKey(k) {
+    return String(k).replace(/\s+/g, '');
+  }
 
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      return { value: obj[key], path: path ? `${path}.${key}` : key };
-    }
+  function isEmptyValue(v) {
+    return v === null || v === undefined || (typeof v === 'string' && v.trim() === '');
+  }
 
-    if (Array.isArray(obj)) {
-      for (let i = 0; i < obj.length; i++) {
-        const found = findKeyDeep(obj[i], key, `${path}[${i}]`);
+  function findKeyDeep(obj, key) {
+    const target = normKey(key);
+    let firstEmpty = null;
+    const seen = new Set();
+
+    function walk(node, path) {
+      if (node === null || typeof node !== 'object' || seen.has(node)) return null;
+      seen.add(node);
+      const entries = Array.isArray(node)
+        ? node.map((v, i) => [i, v, `${path}[${i}]`])
+        : Object.keys(node).map((k) => [k, node[k], path ? `${path}.${k}` : k]);
+
+      for (const [k, v, p] of entries) {
+        if (!Array.isArray(node) && normKey(k) === target) {
+          if (!isEmptyValue(v)) return { value: v, path: p };
+          if (!firstEmpty) firstEmpty = { value: v, path: p };
+        }
+      }
+      for (const [, v, p] of entries) {
+        const found = walk(v, p);
         if (found) return found;
       }
       return null;
     }
 
-    for (const k of Object.keys(obj)) {
-      const found = findKeyDeep(obj[k], key, path ? `${path}.${k}` : k);
-      if (found) return found;
-    }
-    return null;
+    return walk(obj, '') || firstEmpty;
   }
 
   function extractMatId(url) {
@@ -329,7 +364,22 @@
 
   // data는 문자열(JSON 텍스트)일 수도, 이미 파싱된 객체일 수도 있습니다.
   // (axios 등은 XHR responseType을 'json'으로 설정해 브라우저가 자동 파싱하는 경우가 많습니다.)
-  function handleResponseData(url, data) {
+  // 매물일련번호별 결과 캐시 (페이지가 API를 다시 부르지 않고 캐시를 쓸 때 재표시용)
+  const resultCache = new Map();
+  // 빠르게 여러 매물을 클릭했을 때, 늦게 도착한 이전 응답이 최신 값을 덮어쓰지 않도록
+  let requestSeq = 0;
+  let latestShownSeq = 0;
+
+  function handleResponseData(url, data, seq) {
+    if (typeof seq === 'number') {
+      if (seq < latestShownSeq) {
+        log('이전 요청의 늦은 응답이라 표시하지 않습니다:', url);
+        const staleId = extractMatId(url);
+        if (staleId) cacheResult(staleId, data);
+        return;
+      }
+      latestShownSeq = seq;
+    }
     let json;
 
     if (data && typeof data === 'object') {
@@ -351,6 +401,7 @@
 
     if (found) {
       log(`발견 (경로: ${found.path}):`, found.value);
+      if (matId) resultCache.set(String(matId), found.value);
       showValue(found.value, matId);
     } else {
       warn('키를 찾지 못했습니다. 전체 응답:', json);
@@ -358,22 +409,88 @@
     }
   }
 
+  function cacheResult(matId, data) {
+    try {
+      const json = typeof data === 'string' ? JSON.parse(data) : data;
+      const found = json && typeof json === 'object' ? findKeyDeep(json, TARGET_KEY) : null;
+      if (found) resultCache.set(String(matId), found.value);
+    } catch (e) {
+      /* 무시 */
+    }
+  }
+
+  function toUrlString(u) {
+    if (!u) return '';
+    if (typeof u === 'string') return u;
+    if (typeof u.url === 'string') return u.url; // Request 객체
+    if (typeof u.href === 'string') return u.href; // URL 객체
+    try {
+      return String(u);
+    } catch (e) {
+      return '';
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // SPA 화면 전환 감지: 새 API 호출 없이 매물이 바뀌면 캐시 값 표시 또는 '이전 값' 경고
+  // ---------------------------------------------------------------------
+  let lastHref = location.href;
+  let pendingSince = 0;
+
+  function onLocationChange() {
+    if (location.href === lastHref) return;
+    lastHref = location.href;
+    const href = decodeURIComponent(location.href);
+    for (const [id, value] of resultCache) {
+      if (id !== shownMatId && new RegExp(`(^|\\D)${id}(\\D|$)`).test(href)) {
+        log('캐시된 매물 값 표시:', id);
+        showValue(value, id);
+        return;
+      }
+    }
+    // 잠시 기다려도 새 bascInfo 응답이 없으면 화면 값이 이전 매물 것일 수 있음을 알림
+    const mark = (pendingSince = Date.now());
+    const seqAtChange = latestShownSeq;
+    setTimeout(() => {
+      if (pendingSince === mark && latestShownSeq === seqAtChange && requestSeq === seqAtChange) {
+        markStale();
+      }
+    }, 1500);
+  }
+
+  ['pushState', 'replaceState'].forEach((name) => {
+    const orig = history[name];
+    if (typeof orig !== 'function') return;
+    history[name] = function () {
+      const ret = orig.apply(this, arguments);
+      try {
+        onLocationChange();
+      } catch (e) {
+        /* 무시 */
+      }
+      return ret;
+    };
+  });
+  window.addEventListener('popstate', onLocationChange);
+  window.addEventListener('hashchange', onLocationChange);
+
   // ---------------------------------------------------------------------
   // fetch 가로채기
   // ---------------------------------------------------------------------
   const originalFetch = window.fetch;
   if (typeof originalFetch === 'function') {
     window.fetch = function (input, init) {
-      const url = typeof input === 'string' ? input : (input && input.url) || '';
+      const url = toUrlString(input);
       const promise = originalFetch.apply(this, arguments);
       if (url && url.indexOf(TARGET_URL_FRAGMENT) !== -1) {
+        const seq = ++requestSeq;
         log('fetch 요청 감지:', url);
         promise
           .then((res) => {
             res
               .clone()
               .text()
-              .then((text) => handleResponseData(url, text))
+              .then((text) => handleResponseData(url, text, seq))
               .catch((e) => warn('fetch 응답 읽기 실패:', e));
             return res;
           })
@@ -392,22 +509,31 @@
     const origSend = OrigXHR.prototype.send;
 
     OrigXHR.prototype.open = function (method, url) {
-      this.__kbGitazuso1Url = url;
-      this.__kbGitazuso1Match = typeof url === 'string' && url.indexOf(TARGET_URL_FRAGMENT) !== -1;
+      const urlStr = toUrlString(url);
+      this.__kbGitazuso1Url = urlStr;
+      this.__kbGitazuso1Match = urlStr.indexOf(TARGET_URL_FRAGMENT) !== -1;
       return origOpen.apply(this, arguments);
     };
 
     OrigXHR.prototype.send = function () {
       if (this.__kbGitazuso1Match) {
         const url = this.__kbGitazuso1Url;
+        const seq = ++requestSeq;
         log('XHR 요청 감지:', url, '(responseType=' + (this.responseType || '(빈값/text)') + ')');
         this.addEventListener('load', function () {
           try {
             // responseType이 'json'이면 responseText 접근 시 예외가 발생하므로 response를 우선 사용
-            const data = this.responseType && this.responseType !== '' && this.responseType !== 'text'
-              ? this.response
-              : this.responseText;
-            handleResponseData(url, data);
+            const rt = this.responseType;
+            if (rt === 'blob' && this.response && typeof this.response.text === 'function') {
+              this.response.text().then((t) => handleResponseData(url, t, seq));
+              return;
+            }
+            if (rt === 'arraybuffer' && this.response) {
+              handleResponseData(url, new TextDecoder('utf-8').decode(this.response), seq);
+              return;
+            }
+            const data = rt && rt !== 'text' ? this.response : this.responseText;
+            handleResponseData(url, data, seq);
           } catch (e) {
             warn('XHR 응답 처리 중 오류:', e);
           }
@@ -420,6 +546,6 @@
     };
   }
 
-  // 페이지 로드 시 오버레이 미리 준비
+  // 페이지 로드 시 오버레이 미리 준비 (document-start라 body가 생기면 부착됩니다)
   ensureOverlay();
 })();
