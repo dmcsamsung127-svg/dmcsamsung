@@ -98,7 +98,7 @@
 
 <header>
   <h1>데시앙 주차장 3D</h1>
-  <p>고양향동 공공주택지구 도시지원시설(9BL) 지식산업센터 · 지하 2층 ~ 지상 5층 자주식 주차</p>
+  <p>고양향동 공공주택지구 도시지원시설(9BL) 지식산업센터 · 지하 2층~지상 5층 드라이브인·주차, 6~20층 타워</p>
 </header>
 
 <div class="app">
@@ -109,6 +109,8 @@
       <g id="needle"><path d="M22 9 L26 24 L22 21 L18 24 Z" fill="var(--epoxy)"/><text x="22" y="37" text-anchor="middle" font-size="10" font-weight="500" fill="var(--ink)" font-family="IBM Plex Mono, monospace">N</text></g>
     </svg>
     <div class="hud" role="toolbar" aria-label="보기 설정">
+      <button type="button" id="bUnits" aria-pressed="true">호실</button>
+      <button type="button" id="bTower" aria-pressed="true">타워 6~20층</button>
       <button type="button" id="bExplode" aria-pressed="true">층 펼치기</button>
       <button type="button" id="bPlan" aria-pressed="true">평면도</button>
       <button type="button" id="bCars" aria-pressed="true">차량</button>
@@ -126,6 +128,11 @@
       <p class="note">막대는 도면에서 인식한 주차면 수, 오른쪽 숫자는 도면에 표기된 대수입니다. 층을 누르면 그 층만 보여 줍니다.</p>
     </section>
     <section class="block">
+      <h2>호실 (도면 번호 기준)</h2>
+      <ul class="legend" id="ulegend"></ul>
+      <p class="note">드라이브인 호실(F·FB)은 주차층 차로에 바로 붙어 있습니다. 호실에 마우스를 올리면 번호와 면적이 나옵니다.</p>
+    </section>
+    <section class="block">
       <h2>주차면 종류</h2>
       <ul class="legend" id="legend"></ul>
     </section>
@@ -137,7 +144,7 @@
         <button type="button" data-occ="0.8" aria-pressed="true">80%</button>
         <button type="button" data-occ="1" aria-pressed="false">만차</button>
       </div>
-      <p class="note">층고: 지하 2층 EL+28.5, 지하 1층 EL+34.0, 지상 1층 EL+40.0은 도면 표기값입니다. 2~5층은 도면에 레벨이 없어 층고 5.0m로 가정했습니다.</p>
+      <p class="note">층고: 지하 2층 EL+28.5, 지하 1층 EL+34.0, 지상 1층 EL+40.0은 도면 표기값입니다. 2~5층은 도면에 레벨이 없어 층고 5.0m, 6~20층은 4.0m로 가정했습니다.</p>
     </section>
   </aside>
 </div>
@@ -174,7 +181,19 @@ const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).
 const stage = document.getElementById('stage');
 const tip = document.getElementById('tip');
 
-const data = await (await fetch('parking.json')).json();
+const [data, udata] = await Promise.all(['parking.json', 'units.json'].map(async u => (await fetch(u)).json()));
+const UNIT_TYPES = {
+  drive:  { name: '드라이브인 (F·FB)', color: '#c8643c' },
+  retail: { name: '근린생활 (R·RB·SB)', color: '#4f7fb0' },
+  office: { name: '타워 사무 (KA·KB)', color: '#d9ddd6' },
+  duplex: { name: '복층 (C)', color: '#8a63b5' },
+};
+const unitType = id => /^(FB|F)\d/.test(id) ? 'drive' : /^(RB|R|SB)\d/.test(id) ? 'retail' : /^C/.test(id) ? 'duplex' : 'office';
+// 층 레벨: B2~1F 도면 EL, 2~5층 층고 5.0m(추정), 6~20층 4.0m(추정)
+const LEVELS = ['B2','B1','1F','2F','3F','4F','5F'].map(id => ({ id, el: data.floors.find(f => f.id === id).el, podium: true }));
+for (let n = 6; n <= 20; n++) LEVELS.push({ id: n + 'F', el: 60 + 5 + (n - 6) * 4.0, podium: false });
+const ROOF_EL = LEVELS.at(-1).el + 4.0;
+const storeyOf = id => { const i = LEVELS.findIndex(l => l.id === id); return (LEVELS[i + 1]?.el ?? ROOF_EL) - LEVELS[i].el; };
 const W = data.crop.w, H = data.crop.h;
 const BASE = data.floors[0].el;
 
@@ -192,9 +211,12 @@ const sun = new THREE.DirectionalLight(0xffffff, 1.4);
 sun.position.set(-120, 220, 160);
 scene.add(sun);
 
-const state = { explode: true, plan: true, cars: true, cols: false, focus: null, occ: 0.8 };
-const gap = () => state.explode ? 2.6 : 1;           // 층 간격 배율
-const floorY = f => (f.el - BASE) * gap();
+const state = { explode: true, plan: true, cars: true, cols: false, units: true, tower: true, focus: null, occ: 0.8 };
+const gap = () => state.explode ? 4.5 : 1;           // 층 간격 배율
+const PODIUM_TOP = data.floors.at(-1).el - BASE;
+// 펼치기는 주차층(B2~5F) 사이만 벌리고, 타워는 통째로 그만큼 올린다
+const elY = el => { const r = el - BASE; return r <= PODIUM_TOP ? r * gap() : PODIUM_TOP * gap() + (r - PODIUM_TOP); };
+const floorY = f => elY(f.el);
 
 // 결정적 난수 (새로고침해도 같은 차량 배치)
 let seed = 7;
@@ -223,7 +245,7 @@ for (const f of data.floors) {
   const tex = loader.load(`plan-${f.id}.webp`);
   tex.colorSpace = THREE.SRGBColorSpace;
   tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
-  const slabMat = new THREE.MeshLambertMaterial({ map: tex, transparent: true, opacity: 0.95 });
+  const slabMat = new THREE.MeshLambertMaterial({ map: tex, transparent: true, opacity: 0.82 });
   const slab = new THREE.Mesh(new THREE.PlaneGeometry(W, H), slabMat);
   slab.rotation.x = -Math.PI / 2;
   slab.position.set(W / 2, 0, H / 2);
@@ -272,6 +294,52 @@ const rampMeshes = RAMPS.map(r => {
   scene.add(mesh);
   return mesh;
 });
+// ---------- 호실 · 타워 ----------
+const unitGroups = {};
+const unitMats = Object.fromEntries(Object.entries(UNIT_TYPES).map(([k, v]) => [k,
+  new THREE.MeshLambertMaterial({ color: v.color, transparent: k === 'office', opacity: k === 'office' ? 0.92 : 1 })]));
+const shellMat = new THREE.MeshLambertMaterial({ color: 0x9fb4ba, transparent: true, opacity: 0.18, depthWrite: false });
+const slabMat2 = new THREE.MeshLambertMaterial({ color: 0xb9bdb6 });
+const unitCount = {};
+for (const lv of LEVELS) {
+  const g = new THREE.Group(); g.userData.level = lv; scene.add(g); unitGroups[lv.id] = g;
+  const units = udata.units[lv.id] || [];
+  const h = storeyOf(lv.id) - 0.6;
+  const byType = {};
+  for (const u of units) {
+    const t = unitType(u.id); unitCount[t] = (unitCount[t] || 0) + 1;
+    for (const r of u.rects) (byType[t] ||= []).push({ r, u });
+  }
+  const m = new THREE.Matrix4(), q = new THREE.Quaternion();
+  for (const [t, list] of Object.entries(byType)) {
+    const im = new THREE.InstancedMesh(boxGeo, unitMats[t], list.length);
+    list.forEach(({ r }, i) => {
+      m.compose(new THREE.Vector3(r[0] + r[2] / 2, 0.12 + h / 2, r[1] + r[3] / 2), q, new THREE.Vector3(r[2], h, r[3]));
+      im.setMatrixAt(i, m);
+    });
+    im.userData = { role: 'unit', list, floor: lv.id };
+    g.add(im);
+  }
+  // 타워층: 바닥판 + 유리 외피
+  const fp = udata.footprints[lv.id];
+  if (fp && !lv.podium) {
+    const slab = new THREE.InstancedMesh(boxGeo, slabMat2, fp.length);
+    const shell = new THREE.InstancedMesh(boxGeo, shellMat, fp.length);
+    const H2 = storeyOf(lv.id);
+    fp.forEach((r, i) => {
+      m.compose(new THREE.Vector3(r[0] + r[2] / 2, 0, r[1] + r[3] / 2), q, new THREE.Vector3(r[2], 0.3, r[3])); slab.setMatrixAt(i, m);
+      m.compose(new THREE.Vector3(r[0] + r[2] / 2, H2 / 2, r[1] + r[3] / 2), q, new THREE.Vector3(r[2], H2 - 0.3, r[3])); shell.setMatrixAt(i, m);
+    });
+    slab.userData.role = 'tslab'; shell.userData.role = 'shell';
+    g.add(slab, shell);
+    if (lv.id === '20F') {        // 지붕
+      const roof = new THREE.InstancedMesh(boxGeo, slabMat2, fp.length);
+      fp.forEach((r, i) => { m.compose(new THREE.Vector3(r[0] + r[2] / 2, H2, r[1] + r[3] / 2), q, new THREE.Vector3(r[2], 0.4, r[3])); roof.setMatrixAt(i, m); });
+      roof.userData.role = 'tslab'; g.add(roof);
+    }
+  }
+}
+
 function buildRamp(mesh) {
   const r = mesh.userData;
   const f0 = data.floors.find(f => f.id === r.from), f1 = data.floors.find(f => f.id === r.to);
@@ -333,6 +401,13 @@ function layout() {
       }
     }
   }
+  for (const lv of LEVELS) {
+    const g = unitGroups[lv.id];
+    g.position.y = elY(lv.el);
+    g.visible = state.units && (state.focus ? state.focus === lv.id : (lv.podium || state.tower));
+    if (!lv.podium && !state.focus) g.visible = state.tower;
+    for (const c of g.children) if (c.userData.role === 'unit') c.visible = state.units;
+  }
   for (const mesh of rampMeshes) {
     const r = mesh.userData;
     mesh.visible = !state.focus || state.focus === r.from || state.focus === r.to;
@@ -341,9 +416,9 @@ function layout() {
 }
 
 function resetView() {
-  const top = floorY(data.floors.at(-1));
-  controls.target.set(W / 2, top / 2, H / 2);
-  camera.position.set(W * 0.12, top + 150, H + 170);
+  const top = state.tower ? elY(ROOF_EL) : floorY(data.floors.at(-1));
+  controls.target.set(W / 2, top * 0.42, H / 2);
+  camera.position.set(-W * 0.15, top * 0.7 + 50, H + 360);
   if (state.focus) {
     const f = data.floors.find(f => f.id === state.focus);
     controls.target.set(W / 2, floorY(f), H / 2);
@@ -377,9 +452,19 @@ stage.addEventListener('pointermove', e => {
   ptr.set(((e.clientX - r.left) / r.width) * 2 - 1, -((e.clientY - r.top) / r.height) * 2 + 1);
   ray.setFromCamera(ptr, camera);
   const targets = [];
-  scene.traverse(o => { if (o.userData.role === 'stall' && o.parent.visible) targets.push(o); });
+  scene.traverse(o => { if ((o.userData.role === 'stall' || o.userData.role === 'unit') && o.visible && o.parent.visible) targets.push(o); });
   const hit = ray.intersectObjects(targets, false)[0];
   if (!hit) { tip.hidden = true; return; }
+  if (hit.object.userData.role === 'unit') {
+    const { list, floor } = hit.object.userData;
+    const u = list[hit.instanceId].u;
+    const area = u.rects.reduce((a, r) => a + r[2] * r[3], 0);
+    tip.textContent = `${u.id} · ${floor} · ${UNIT_TYPES[unitType(u.id)].name.split(' ')[0]} · 약 ${area.toFixed(0)}㎡${u.est ? ' (추정 범위)' : ''}`;
+    tip.hidden = false;
+    tip.style.left = Math.min(e.clientX - r.left + 14, r.width - tip.offsetWidth - 8) + 'px';
+    tip.style.top = (e.clientY - r.top + 14) + 'px';
+    return;
+  }
   const { list, floor } = hit.object.userData;
   const s = list[hit.instanceId];
   const a = Math.min(s.w, s.h).toFixed(1), b = Math.max(s.w, s.h).toFixed(1);
@@ -425,6 +510,12 @@ const toggle = (id, key) => document.getElementById(id).addEventListener('click'
   e.currentTarget.setAttribute('aria-pressed', String(state[key]));
   layout();
   if (key === 'explode') resetView();
+});
+document.getElementById('ulegend').innerHTML = Object.entries(UNIT_TYPES).map(([k, v]) =>
+  `<li><i style="background:${v.color}"></i>${v.name.split(' ')[0]}<span class="n">${fmt(unitCount[k] || 0)}실</span></li>`).join('');
+toggle('bUnits', 'units');
+document.getElementById('bTower').addEventListener('click', e => {
+  state.tower = !state.tower; e.currentTarget.setAttribute('aria-pressed', String(state.tower)); layout(); resetView();
 });
 toggle('bExplode', 'explode'); toggle('bPlan', 'plan'); toggle('bCars', 'cars'); toggle('bCols', 'cols');
 document.getElementById('bReset').addEventListener('click', resetView);
