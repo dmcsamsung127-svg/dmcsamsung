@@ -1,7 +1,7 @@
 import pymupdf as fitz, numpy as np, re, json, sys
 from scipy import ndimage as ndi
-PDF='/root/.claude/uploads/a7808b39-5d40-548d-9bd9-112abfa52580/a3a94f6b-9___________.pdf'
-MM_PER_PT = 25.4/72*800/1000   # m per pt at 1/800 on A3
+PDF='/root/.claude/uploads/a7808b39-5d40-548d-9bd9-112abfa52580/8ef16fdf-9___________.pdf'
+MM_PER_PT = 170.4/598.08   # m per pt: 그리드 전체 치수선 170,400mm = 598.08pt 로 보정
 S = 8                          # px per pt
 d = fitz.open(PDF)
 
@@ -77,4 +77,40 @@ def measure2(pno, expected, close=2.5):
     for score, rid, r, bw, bh, fr in cands:
         if rid in res or r in used_r: continue
         res[rid] = dict(w=round(bw,2), h=round(bh,2), fill=round(fr,2), err=round(score,3)); used_r.add(r)
+    return res
+
+def measure3(pno, expected, close=2.5):
+    """measure2와 같되, 칸의 도면 좌표(bbox, pt)까지 돌려줌 — 검수용 오버레이에 사용"""
+    p = d[pno]; ink = walls_image(p)
+    ink = ndi.binary_dilation(ink, iterations=int(close*S/2))
+    lab, n = ndi.label(~ink)
+    objs = ndi.find_objects(lab)
+    sizes = ndi.sum(np.ones_like(lab), lab, index=range(1, n+1))
+    cands = []
+    for w in p.get_text('words'):
+        rid = w[4]
+        if rid not in expected: continue
+        E = expected[rid]; seen = set()
+        for fx in np.linspace(-0.5, 1.5, 9):
+            for fy in np.linspace(-0.5, 1.5, 9):
+                x = int((w[0] + (w[2]-w[0])*fx)*S); y = int((w[1] + (w[3]-w[1])*fy)*S)
+                if not (0<=y<lab.shape[0] and 0<=x<lab.shape[1]) or not lab[y,x] or lab[y,x] in seen: continue
+                r = lab[y,x]; seen.add(r); sl = objs[r-1]
+                hp = sl[0].stop-sl[0].start; wp = sl[1].stop-sl[1].start
+                fr = sizes[r-1]/(hp*wp)
+                if fr < 0.6: continue
+                mk = (lab[sl] == r)
+                # 대표 폭: 행·열마다 칸 길이를 재고 상위 중앙값 사용(문 홈·창문선 밖 누수 무시)
+                rows = mk.sum(1); cols = mk.sum(0)
+                rows = rows[rows > 0.5*rows.max()]; cols = cols[cols > 0.5*cols.max()]
+                wp2 = float(np.median(rows)); hp2 = float(np.median(cols))
+                bw = (wp2/S+close)*MM_PER_PT; bh = (hp2/S+close)*MM_PER_PT
+                score = abs(bw*bh - E)/E
+                if score < 0.2:
+                    bbox = ((sl[1].start/S)-close/2, (sl[0].start/S)-close/2, (sl[1].stop/S)+close/2, (sl[0].stop/S)+close/2)
+                    cands.append((score, rid, r, bw, bh, fr, bbox, (w[0],w[1],w[2],w[3])))
+    cands.sort(key=lambda c: c[0]); used=set(); res={}
+    for score, rid, r, bw, bh, fr, bbox, lb in cands:
+        if rid in res or r in used: continue
+        res[rid] = dict(w=round(bw,2), h=round(bh,2), fill=round(float(fr),2), err=round(float(score),3), page=pno, bbox=[round(v,2) for v in bbox], label=[round(v,2) for v in lb]); used.add(r)
     return res
