@@ -178,46 +178,46 @@
    corner       : [주 창 방향, 측면 창 방향]
    rooms        : 두 호실 연속 도면 (w·d 실측값이 있으면 그대로 사용)             */
 const UNITS = [
-  { id: "KB805", w: 4.47, d: 8.28,  area: 11.18, dir: "서향", sink: false, blind: false },
-  { id: "KB806", w: 5.69, d: 8.27,  area: 14.23, dir: "서향", sink: false, blind: false },
-  { id: "KB1316", w: 4.38, d: 10.94, area: 14.48, dir: "동향", sink: false, blind: false },
-  { id: "KB916", w: 4.38, d: 10.94,  area: 14.48, dir: "동향", sink: false, blind: false },
-  { id: "KB932", w: 4.38, d: 10.94,  area: 14.48, dir: "동향", sink: false, blind: false },
-  { id: "KB608", w: 5.64, d: 8.04,  area: 13.72, dir: "서향", sink: false, blind: false },
-  { id: "KB1814", w: 5.59, d: 11.01, area: 18.62, dir: "동향", sink: true,  blind: null },
-  { id: "KA604", w: 5.6, d: 10.99,  area: 18.62, dir: "동향", sink: null,  blind: null },
-  { id: "KA605", w: 5.62, d: 10.96,  area: 18.62, dir: "동향", sink: null,  blind: null },
-  { id: "KA611", w: 4.22, d: 11.12,  area: 14.21, dir: "남향", sink: null,  blind: null, terrace: true,
+  { id: "KB805", w: 4.23, d: 8.14,  area: 11.18, dir: "서향", sink: false, blind: false },
+  { id: "KB806", w: 5.44, d: 8.13,  area: 14.23, dir: "서향", sink: false, blind: false },
+  { id: "KB1316", w: 4.0, d: 11.2, area: 14.48, dir: "동향", sink: false, blind: false },
+  { id: "KB916", w: 4.0, d: 11.2,  area: 14.48, dir: "동향", sink: false, blind: false },
+  { id: "KB932", w: 4.0, d: 11.2,  area: 14.48, dir: "동향", sink: false, blind: false },
+  { id: "KB608", w: 5.2, d: 8.2,  area: 13.72, dir: "서향", sink: false, blind: false },
+  { id: "KB1814", w: 5.2, d: 11.2, area: 18.62, dir: "동향", sink: true,  blind: null },
+  { id: "KA604", w: 5.2, d: 11.2,  area: 18.62, dir: "동향", sink: null,  blind: null },
+  { id: "KA605", w: 5.2, d: 11.2,  area: 18.62, dir: "동향", sink: null,  blind: null },
+  { id: "KA611", w: 4.0, d: 10.98,  area: 14.21, dir: "남향", sink: null,  blind: null, terrace: true,
     note: "단독 테라스" },
   { id: "FB232", w: 5.73, d: 9.45, height: 3.0,  area: 16.38, dir: null,   sink: null,  blind: null, drive: true },
   { id: "FB204", w: 5.21, d: 11.2, height: 3.0,  area: 17.64, dir: null,   sink: null,  blind: null, drive: true },
-  { id: "KB1226", w: 5.59, d: 11.01, area: 18.62, dir: "동향", sink: true,  blind: true,
+  { id: "KB1226", w: 5.2, d: 11.2, area: 18.62, dir: "동향", sink: true,  blind: true,
     note: "연계 호실 가능" },
-  { id: "F441", w: 4.41, d: 7.99,   area: 10.67, dir: "남향", sink: null,  blind: null, drive: true },
-  { id: "F326", w: 5.62, d: 9.71,   area: 16.5,  dir: "동향", sink: null,  blind: null, drive: true },
-  { id: "F532", w: 5.6, d: 11.09,   area: 18.79, dir: "동향", sink: null,  blind: null, drive: true },
-  { id: "KA911", w: 11.46, d: 6.04,  area: 20.94, dir: "남동향 코너", corner: ["남", "동"], sink: true, blind: null, curtain: true,
+  { id: "F441", w: 4.0, d: 8.2,   area: 10.67, dir: "남향", sink: null,  blind: null, drive: true },
+  { id: "F326", w: 5.2, d: 9.9,   area: 16.5,  dir: "동향", sink: null,  blind: null, drive: true },
+  { id: "F532", w: 5.2, d: 11.3,   area: 18.79, dir: "동향", sink: null,  blind: null, drive: true },
+  { id: "KA911", w: 5.75, d: 11.44,  area: 20.94, dir: "남동향 코너", corner: ["남", "동"], sink: true, blind: null, curtain: true,
     sinkLabel: "대리석", note: "대리석 싱크대 · 쉬폰 커튼 · 바닥 인테리어 · 에어컨" },
-  { id: "KA2002", w: 8.56, d: 9.7, area: 25.11, dir: "서향", corner: ["서", "북"],  sink: null, blind: null },
-  { id: "KB1901", w: 8.96, d: 8.38, area: 22.7,  dir: "북서 코너", corner: ["북", "서"], sink: null, blind: null },
-  { id: "F228", w: 10.08, d: 8.91,   area: 27.17, dir: "동향",  sink: null, blind: null, drive: true },
-  { id: "F427", w: 8.65, d: 9.81,   area: 25.66, dir: "동향",  sink: null, blind: null, drive: true },
-  { id: "F419", w: 10.08, d: 8.91,   area: 27.17, dir: "북동 코너", corner: ["북", "동"], sink: null, blind: null, drive: true },
-  { id: "F347", w: 8.26, d: 11.62,   area: 29,    dir: "서향",  sink: null, blind: null, drive: true },
+  { id: "KA2002", w: 8.51, d: 9.33, area: 25.11, dir: "서향", corner: ["서", "북"],  sink: null, blind: null },
+  { id: "KB1901", w: 8.54, d: 8.38, area: 22.7,  dir: "북서 코너", corner: ["북", "서"], sink: null, blind: null },
+  { id: "F228", w: 8.58, d: 10.03,   area: 27.17, dir: "동향",  sink: null, blind: null, drive: true },
+  { id: "F427", w: 8.2, d: 9.9,   area: 25.66, dir: "동향",  sink: null, blind: null, drive: true },
+  { id: "F419", w: 8.58, d: 10.03,   area: 27.17, dir: "북동 코너", corner: ["북", "동"], sink: null, blind: null, drive: true },
+  { id: "F347", w: 8.37, d: 11.01,   area: 29,    dir: "서향",  sink: null, blind: null, drive: true },
   { id: "KB1712-1713", title: "KB1712·1713", area: 31.28, dir: "북동향", corner: ["북", "동"], sink: null, blind: true,
-    rooms: [{ id: "KB1712", area: 16.8, w: 4.84, d: 11.47 }, { id: "KB1713", area: 14.48, w: 4.38, d: 10.94 }],
+    rooms: [{ id: "KB1712", area: 16.8, w: 4.55, d: 11.48 }, { id: "KB1713", area: 14.48, w: 4.0, d: 11.2 }],
     note: "두 호실 연속 · 가벽 유지(터놓지 않음) · 일괄 임차" },
   { id: "FB102-103", title: "FB102·103", area: 44.55, dir: null, sink: false, blind: false, drive: true,
     height: 3.0, door: 2.10, doorH: 2.12,
     rooms: [{ id: "FB102", area: 21.64, m2: 71.54, w: 4.92, d: 13.51 }, { id: "FB103", area: 22.91, m2: 75.73, w: 5.21, d: 13.52 }],
     fbBullets: ["호실마다 출입문 1개 (2.10×2.12m)", "두 호실 따로 / 합쳐서 임대 가능"],
     note: "층고 약 3M(FB102 2.94m · FB103 2.99m) · 출입문 2.10×2.12m · 따로/합쳐서 가능" },
-  { id: "KA1906", w: 11.35, d: 11.53, area: 39.56, dir: "남동향 코너", corner: ["남", "동"], sink: null, blind: null },
-  { id: "KB1710", w: 4.39, d: 8.04, area: 10.67, dir: "서향",  sink: null, blind: null },
-  { id: "KB1630", w: 4.38, d: 10.94, area: 14.48, dir: "남향",  sink: null, blind: null },
+  { id: "KA1906", w: 11.23, d: 11.24, area: 39.56, dir: "남동향 코너", corner: ["남", "동"], sink: null, blind: null },
+  { id: "KB1710", w: 4.0, d: 8.2, area: 10.67, dir: "서향",  sink: null, blind: null },
+  { id: "KB1630", w: 4.0, d: 11.2, area: 14.48, dir: "남향",  sink: null, blind: null },
   { id: "FB111", w: 4.56, d: 13.61, height: 3.0,  area: 18.75, dir: null,    sink: null, blind: null, drive: true },
-  { id: "KB611", w: 5.6, d: 10.99,  area: 18.62, dir: "동향",  sink: null, blind: null },
-  { id: "KB1135", w: 9.09, d: 9.13, area: 25.1, terrace: true,    dir: null,    sink: null, blind: null },
+  { id: "KB611", w: 5.2, d: 11.2,  area: 18.62, dir: "동향",  sink: null, blind: null },
+  { id: "KB1135", w: 9.13, d: 8.69, area: 25.1, terrace: true,    dir: null,    sink: null, blind: null },
 ];
 
 const M2_PER_PY = 3.305785;
@@ -325,14 +325,14 @@ function renderUnit(u, st) {
 
   /* 2. 테라스 (창 밖) */
   if (u.terrace) {
-    const td = 2.4;
-    poly([[0, -T, 0], [W, -T, 0], [W, -T - td, 0], [0, -T - td, 0]], { fill: COL.deck, stroke: COL.plank });
-    for (let x = 0.3; x < W; x += 0.3) line([[x, -T, 0], [x, -T - td, 0]], { stroke: COL.plank, sw: 0.8 });
-    const ry = -T - td;
+    const td = 2.4, t0 = -T - (st.balcony && hasWin ? 1.5 + T : 0);   // 발코니가 있으면 그 바깥
+    poly([[0, t0, 0], [W, t0, 0], [W, t0 - td, 0], [0, t0 - td, 0]], { fill: COL.deck, stroke: COL.plank });
+    for (let x = 0.3; x < W; x += 0.3) line([[x, t0, 0], [x, t0 - td, 0]], { stroke: COL.plank, sw: 0.8 });
+    const ry = t0 - td;
     for (let x = 0; x <= W + 0.01; x += W / Math.ceil(W / 1.2)) line([[x, ry, 0], [x, ry, 1.1]], { stroke: COL.rail, sw: 1.6 });
     line([[0, ry, 1.1], [W, ry, 1.1]], { stroke: COL.rail, sw: 2.2 });
-    line([[W, ry, 1.1], [W, -T, 1.1]], { stroke: COL.rail, sw: 2.2 });
-    line([[W, -T, 0], [W, -T, 1.1]], { stroke: COL.rail, sw: 1.6 });
+    line([[W, ry, 1.1], [W, t0, 1.1]], { stroke: COL.rail, sw: 2.2 });
+    line([[W, t0, 0], [W, t0, 1.1]], { stroke: COL.rail, sw: 1.6 });
     tag([W, -T - td * 0.6, 1.5], "단독 테라스");
   }
 
@@ -641,7 +641,7 @@ const state = {};
 UNITS.forEach(u => { state[u.id] = { sink: !!u.sink, blind: !!u.blind, curtain: !!u.curtain }; });
 
 function cardHTML(u) {
-  const st = { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !u.terrace && !/^C\d/.test(u.id) };
+  const st = { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !/^C\d/.test(u.id) };
   const cap = [u.title || u.id, `${u.area}평`, u.dir].filter(Boolean).join(" · ");
   return `
     <article class="card" data-id="${u.id}" data-g="${u.id.startsWith("F") ? "F" : u.id.slice(0, 2)}">
@@ -689,6 +689,6 @@ const sampleId = (location.search.match(/[?&]sample=([^&]+)/) || [])[1];
 if (sampleId) {
   const u = UNITS.find(x => x.id === sampleId);
   document.body.classList.add("export");
-  grid.innerHTML = `<div class="sheet clean" id="sheet-${u.id}-clean">${renderUnit(u, { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !u.terrace })}</div>`;
+  grid.innerHTML = `<div class="sheet clean" id="sheet-${u.id}-clean">${renderUnit(u, { ...state[u.id], clean: true, balcony: !u.id.startsWith("FB") && !/^C\d/.test(u.id) })}</div>`;
 } else renderAll();
 </script>

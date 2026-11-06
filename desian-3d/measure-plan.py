@@ -114,3 +114,59 @@ def measure3(pno, expected, close=2.5):
         if rid in res or r in used: continue
         res[rid] = dict(w=round(bw,2), h=round(bh,2), fill=round(float(fr),2), err=round(float(score),3), page=pno, bbox=[round(v,2) for v in bbox], label=[round(v,2) for v in lb]); used.add(r)
     return res
+
+def measure4(pno, expected, close=2.5):
+    """벽 중심선 기준 치수: 호실 안 여러 줄에서 양쪽 벽(잉크 띠)의 한가운데까지 거리를 재고 중앙값 사용"""
+    p = d[pno]; ink = walls_image(p)
+    ink = ndi.binary_dilation(ink, iterations=int(close*S/2))
+    lab, n = ndi.label(~ink)
+    objs = ndi.find_objects(lab)
+    sizes = ndi.sum(np.ones_like(lab), lab, index=range(1, n+1))
+    H, W = lab.shape; CAP = int(1.6/MM_PER_PT*S)   # 벽 띠 최대 1.6m
+    def span(line, i0, r):
+        # line: 1D 라벨 배열, i0: 칸 내부 위치 → 양쪽 벽 띠 중심까지의 길이(px)
+        a = i0
+        while a > 0 and line[a-1] == r: a -= 1
+        b = i0
+        while b < len(line)-1 and line[b+1] == r: b += 1
+        def band(start, step):
+            k = 0; j = start
+            while 0 <= j < len(line) and line[j] == 0 and k < CAP: j += step; k += 1
+            return k
+        L = band(a-1, -1); R = band(b+1, +1)
+        return (b - a + 1) + L/2 + R/2
+    def center_dims(r):
+        sl = objs[r-1]; y0, y1 = sl[0].start, sl[0].stop; x0, x1 = sl[1].start, sl[1].stop
+        ws, hs = [], []
+        for f in (0.2, 0.35, 0.5, 0.65, 0.8):
+            y = int(y0 + (y1-y0)*f); row = lab[y]
+            xs = np.nonzero(row[x0:x1] == r)[0]
+            if len(xs): ws.append(span(row, x0 + int(np.median(xs)), r))
+            x = int(x0 + (x1-x0)*f); col = lab[:, x]
+            ys = np.nonzero(col[y0:y1] == r)[0]
+            if len(ys): hs.append(span(col, y0 + int(np.median(ys)), r))
+        if not ws or not hs: return None
+        return (float(np.median(ws))/S*MM_PER_PT, float(np.median(hs))/S*MM_PER_PT)
+    cands = []
+    for w in p.get_text('words'):
+        rid = w[4]
+        if rid not in expected: continue
+        E = expected[rid]; seen = set()
+        for fx in np.linspace(-0.5, 1.5, 9):
+            for fy in np.linspace(-0.5, 1.5, 9):
+                x = int((w[0] + (w[2]-w[0])*fx)*S); y = int((w[1] + (w[3]-w[1])*fy)*S)
+                if not (0<=y<H and 0<=x<W) or not lab[y,x] or lab[y,x] in seen: continue
+                r = lab[y,x]; seen.add(r); sl = objs[r-1]
+                hp = sl[0].stop-sl[0].start; wp = sl[1].stop-sl[1].start
+                if sizes[r-1]/(hp*wp) < 0.6: continue
+                cd = center_dims(r)
+                if not cd: continue
+                score = abs(cd[0]*cd[1] - E)/E
+                if score < 0.2:
+                    bbox = (sl[1].start/S, sl[0].start/S, sl[1].stop/S, sl[0].stop/S)
+                    cands.append((score, rid, r, cd[0], cd[1], bbox))
+    cands.sort(key=lambda c: c[0]); used=set(); res={}
+    for score, rid, r, cw, ch, bbox in cands:
+        if rid in res or r in used: continue
+        res[rid] = dict(w=round(cw,3), h=round(ch,3), err=round(float(score),3), page=pno, bbox=[round(v,2) for v in bbox]); used.add(r)
+    return res
