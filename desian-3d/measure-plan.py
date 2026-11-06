@@ -170,3 +170,25 @@ def measure4(pno, expected, close=2.5):
         if rid in res or r in used: continue
         res[rid] = dict(w=round(cw,3), h=round(ch,3), err=round(float(score),3), page=pno, bbox=[round(v,2) for v in bbox]); used.add(r)
     return res
+
+def measure5(pno, ids, close=2.5):
+    """호실 번호 글자 영역과 가장 많이 겹치는 칸 = 그 호실(면적으로 추측하지 않음). 칸의 안쪽면 bbox(pt) 반환"""
+    p = d[pno]; ink = walls_image(p)
+    ink = ndi.binary_dilation(ink, iterations=int(close*S/2))
+    lab, n = ndi.label(~ink); objs = ndi.find_objects(lab)
+    H, W = lab.shape; res = {}
+    for w in p.get_text('words'):
+        rid = w[4]
+        if rid not in ids: continue
+        x0, y0, x1, y1 = [int(v*S) for v in w[:4]]
+        pad = 2*S
+        win = lab[max(0,y0-pad):min(H,y1+pad), max(0,x0-pad):min(W,x1+pad)]
+        core = lab[max(0,y0):min(H,y1), max(0,x0):min(W,x1)]
+        vals, cnts = np.unique(core[core>0], return_counts=True)
+        if not len(vals):
+            vals, cnts = np.unique(win[win>0], return_counts=True)
+            if not len(vals): continue
+        r = int(vals[np.argmax(cnts)]); sl = objs[r-1]
+        bbox = (sl[1].start/S - close/2, sl[0].start/S - close/2, sl[1].stop/S + close/2, sl[0].stop/S + close/2)
+        res[rid] = dict(page=pno, bbox=[round(v,2) for v in bbox], share=round(float(cnts.max()/cnts.sum()),2))
+    return res
