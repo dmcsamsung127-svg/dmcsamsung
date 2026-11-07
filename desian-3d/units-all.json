@@ -3450,12 +3450,19 @@
 "sink": null,
 "blind": null,
 "drive": true,
-"cw": 10.26,
+"cw": 10.8,
 "cd": 22.2,
-"w": 10.06,
+"w": 10.6,
 "d": 22.0,
-"dimSrc": "도면 그리드 기준",
-"updated": "2026-11-07"
+"dimSrc": "도면 그리드 기준(사선 모서리·옆문 직접 확인)",
+"updated": "2026-11-07",
+"chamfer": [
+6.1,
+12.7
+],
+"doorSide": "R",
+"doorAt": 4.3,
+"noPark": true
 },
 {
 "id": "FB102",
@@ -3469,7 +3476,8 @@
 "d": 13.51,
 "dimSrc": "매물장 실측",
 "door": 2.1,
-"doorH": 2.12
+"doorH": 2.12,
+"noPark": true
 },
 {
 "id": "FB103",
