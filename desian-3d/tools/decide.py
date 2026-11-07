@@ -3,7 +3,9 @@
 #   park=N  parkX0=x  ent=i(앞벽 호 중 출입문 인덱스, 기본: 가장 넓은 것) ext=L|R|none(바깥 측벽) back=0|1
 #   dropcol=i,j  W=값 D=값(치수 직접 지정)  note=...
 import fcntl
-_lk=open('/tmp/claude-0/-home-user-dmcsamsung/a7808b39-5d40-548d-9bd9-112abfa52580/scratchpad/decide.lock','w'); fcntl.flock(_lk,fcntl.LOCK_EX)
+import builtins
+if not getattr(builtins,'_decide_lock',None):   # 한 프로세스에서는 한 번만 잠금
+    builtins._decide_lock=open('/tmp/claude-0/-home-user-dmcsamsung/a7808b39-5d40-548d-9bd9-112abfa52580/scratchpad/decide.lock','w'); fcntl.flock(builtins._decide_lock,fcntl.LOCK_EX)
 import json,sys,re,doorread as DR,cols as C,gridsnap as g,stalls as SS
 K=g.K; m=json.load(open('m5_all.json'))
 P='/home/user/dmcsamsung/desian-3d/units-all.json'
