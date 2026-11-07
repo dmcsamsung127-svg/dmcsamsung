@@ -9,7 +9,7 @@ def stalls(pno):
             elif it[0]=='re': R=it[1]
             else: continue
             a,b=sorted([R.width*K,R.height*K])
-            if 2.3<=a<=2.75 and 4.7<=b<=5.4:
+            if (2.3<=a<=2.75 and 4.7<=b<=5.4) or (1.9<=a<=2.1 and 5.8<=b<=6.2):
                 c=((R.x0+R.x1)/2,(R.y0+R.y1)/2)
                 if not any(abs(c[0]-o[4])<0.5/K and abs(c[1]-o[5])<0.5/K for o in out):
                     out.append((R.x0,R.y0,R.x1,R.y1,c[0],c[1]))

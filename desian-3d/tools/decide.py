@@ -2,6 +2,8 @@
 #  FRONT: 출입문 벽(L/R/T/B, 원본 도면 좌표). 옵션:
 #   park=N  parkX0=x  ent=i(앞벽 호 중 출입문 인덱스, 기본: 가장 넓은 것) ext=L|R|none(바깥 측벽) back=0|1
 #   dropcol=i,j  W=값 D=값(치수 직접 지정)  note=...
+import fcntl
+_lk=open('/tmp/claude-0/-home-user-dmcsamsung/a7808b39-5d40-548d-9bd9-112abfa52580/scratchpad/decide.lock','w'); fcntl.flock(_lk,fcntl.LOCK_EX)
 import json,sys,re,doorread as DR,cols as C,gridsnap as g,stalls as SS
 K=g.K; m=json.load(open('m5_all.json'))
 P='/home/user/dmcsamsung/desian-3d/units-all.json'
@@ -79,9 +81,11 @@ for x0_,y0_,x1_,y1_,cx_,cy_ in SS.stalls(v['page']):
     xs=sorted(p[0]*K*sx for p in PP); ys=sorted(p[1]*K*sy for p in PP)
     if mirror: xs=sorted(W-x for x in xs)
     cxm=(xs[0]+xs[1])/2
-    if ys[0]>D-0.1 and ys[0]<D+12 and 0<=cxm<=W and (xs[1]-xs[0])<3:
-        st.append([round(xs[0],2),round(xs[1],2),round(ys[0]-D,2)])
+    if ys[0]>D-0.1 and ys[0]-D-0.2<=float(opt.get('maxgap','5')) and 0<=cxm<=W and (xs[1]-xs[0])<6.5:
+        st.append([round(xs[0],2),round(xs[1],2),round(ys[0]-D,2),round(ys[1]-ys[0],2)])
 st.sort()
+mg=min([q[2] for q in st],default=0)
+st=[q for q in st if q[2]-mg<1.0]   # 같은 줄(통로 같은 쪽)의 칸만
 for k in ('doors','doorX','balBack','balLeft','cols','mirror','parkN','parkX0','noPark','corner','sideBal','stalls','parkGap'):
     u.pop(k,None)
 u['w'],u['d']=W,D
@@ -97,7 +101,7 @@ if mirror: u['mirror']=True
 if u.get('drive'):
     if opt.get('park')=='0' or not st: u['noPark']=True
     else:
-        u['stalls']=[[a_,b_] for a_,b_,_ in st]; u['parkGap']=round(max(0,min(g_ for _,_,g_ in st)-0.2),2)
+        u['stalls']=[[a_,b_]+([dp_] if abs(dp_-5.0)>0.3 else []) for a_,b_,_,dp_ in st]; u['parkGap']=round(max(0,mg-0.2),2)
 u['dimSrc']='도면 대조 확인'+(' — '+opt['note'] if 'note' in opt else '')
 u['updated']='2026-11-07'
 json.dump(a,open(P,'w'),ensure_ascii=False,indent=0)
