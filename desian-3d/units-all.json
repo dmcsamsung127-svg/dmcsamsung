@@ -42580,14 +42580,28 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 6.664,
-"w": 3.89,
-"d": 6.81,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
+"w": 6.81,
+"d": 3.89,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
 "updated": "2026-11-07",
-"cols": []
+"doorX": 2.9,
+"balLeft": [
+[
+0.51,
+1.42
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"mirror": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C602",
@@ -42595,14 +42609,28 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 5.6,
-"w": 3.89,
-"d": 5.79,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
+"w": 5.79,
+"d": 3.89,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
 "updated": "2026-11-07",
-"cols": []
+"doorX": 1.88,
+"balLeft": [
+[
+0.51,
+1.42
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"mirror": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C603",
@@ -42610,13 +42638,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 5.6,
-"w": 3.4,
-"d": 5.4,
-"dimSrc": "도면 그리드 기준",
-"updated": "2026-11-07"
+"w": 5.79,
+"d": 3.59,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 1.88,
+"balLeft": [
+[
+2.3,
+3.22
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C604",
@@ -42624,13 +42666,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 6.631,
-"w": 4.5,
-"d": 6.77,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 6.77,
+"d": 4.5,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 2.86,
+"balLeft": [
+[
+2.77,
+3.69
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C605",
@@ -42638,13 +42694,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 5.6,
-"w": 4.5,
-"d": 5.79,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 5.79,
+"d": 4.5,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 1.88,
+"balLeft": [
+[
+2.77,
+3.69
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C606",
@@ -42652,13 +42722,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 8.084,
-"w": 4.5,
-"d": 8.2,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 8.2,
+"d": 4.5,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 5.32,
+"balLeft": [
+[
+2.77,
+3.69
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C607",
@@ -42666,13 +42750,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 7.2,
-"w": 4.5,
-"d": 7.18,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 7.18,
+"d": 4.5,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 4.3,
+"balLeft": [
+[
+2.77,
+3.69
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C608",
@@ -42680,13 +42778,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 8.084,
-"w": 3.89,
-"d": 8.2,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 8.2,
+"d": 3.89,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 5.32,
+"balLeft": [
+[
+2.47,
+3.38
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C609",
@@ -42694,13 +42806,27 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 7.2,
-"w": 3.89,
-"d": 7.18,
-"dimSrc": "도면 실제 벽 조합(면적표 대조)",
-"updated": "2026-11-07"
+"w": 7.18,
+"d": 3.89,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 4.3,
+"balLeft": [
+[
+2.47,
+3.38
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 },
 {
 "id": "C610",
@@ -42708,12 +42834,26 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 8.084,
-"w": 3.4,
-"d": 7.88,
-"dimSrc": "도면 그리드 기준",
-"updated": "2026-11-07"
+"w": 8.2,
+"d": 3.59,
+"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
+"updated": "2026-11-07",
+"doorX": 5.32,
+"balLeft": [
+[
+2.34,
+3.25
+]
+],
+"corner": [
+"",
+""
+],
+"sideBal": true,
+"openBal": true,
+"door": 1.0,
+"single": true
 }
 ]

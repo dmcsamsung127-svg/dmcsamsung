@@ -88,7 +88,7 @@ for x0_,y0_,x1_,y1_,cx_,cy_ in SS.stalls(v['page']):
 st.sort()
 mg=min([q[2] for q in st],default=0)
 st=[q for q in st if q[2]-mg<1.0]   # 같은 줄(통로 같은 쪽)의 칸만
-for k in ('doors','doorX','balBack','balLeft','cols','mirror','parkN','parkX0','noPark','corner','sideBal','stalls','parkGap'):
+for k in ('doors','doorX','balBack','balLeft','cols','mirror','parkN','parkX0','noPark','corner','sideBal','stalls','parkGap','openBal'):
     u.pop(k,None)
 u['w'],u['d']=W,D
 if fr:
@@ -98,6 +98,7 @@ if bk: u['balBack']=sorted(s for s in bk if s[1]-s[0]>0.5)
 if side: u['balLeft']=sorted(s for s in side if s[1]-s[0]>0.5)
 if ext in ('L','R'): u['corner']=['','']
 if opt.get('sideBal')=='1': u['sideBal']=True
+if opt.get('openBal')=='1': u['openBal']=True
 if cols: u['cols']=cols
 if mirror: u['mirror']=True
 if u.get('drive'):
