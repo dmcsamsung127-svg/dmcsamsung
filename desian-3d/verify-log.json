@@ -1613,74 +1613,54 @@
 "d": 10.8
 },
 "C501": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"w": 8.81,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 0
 },
 "C502": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"w": 8.81,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 0
 },
 "C503": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"w": 8.81,
-"d": 3.59
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 0
 },
 "C504": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"w": 8.81,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 0
 },
 "C505": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"w": 8.81,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 0
 },
 "C506": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"w": 9.79,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.25,
+"terrD": 0
 },
 "C507": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"w": 9.79,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.25,
+"terrD": 0
 },
 "C508": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"w": 9.79,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.25,
+"terrD": 0
 },
 "C509": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"w": 9.79,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.25,
+"terrD": 0
 },
 "C510": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"w": 9.79,
-"d": 3.59
+"front": "manual-C",
+"balD": 1.25,
+"terrD": 0
 },
 "KA612": {
 "front": "B",
@@ -5372,97 +5352,53 @@
 "d": 10.6
 },
 "C601": {
-"front": "T",
-"ext": "R",
-"sideBal": "1",
-"openBal": "1",
-"r": "426.48",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 6.81,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 1.96
 },
 "C602": {
-"front": "T",
-"ext": "R",
-"sideBal": "1",
-"openBal": "1",
-"r": "426.48",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 5.79,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.96
 },
 "C603": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"r": "426.48",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 5.79,
-"d": 3.59
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.96
 },
 "C604": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 6.77,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.22,
+"terrD": 1.96
 },
 "C605": {
-"front": "B",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 5.79,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.96
 },
 "C606": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 8.2,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.63
 },
 "C607": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 7.18,
-"d": 4.5
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.63
 },
 "C608": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 8.2,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.63
 },
 "C609": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"l": "327.36",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 7.18,
-"d": 3.89
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.63
 },
 "C610": {
-"front": "T",
-"ext": "L",
-"sideBal": "1",
-"openBal": "1",
-"note": "6층_옆면_출입문_끝벽_통창",
-"w": 8.2,
-"d": 3.59
+"front": "manual-C",
+"balD": 1.19,
+"terrD": 1.63
 }
 }

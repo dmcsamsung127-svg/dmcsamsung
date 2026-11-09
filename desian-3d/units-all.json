@@ -42220,37 +42220,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.942,
 "cd": 8.876,
-"w": 8.81,
-"d": 3.89,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 2.61,
-"balLeft": [
+"w": 3.89,
+"d": 8.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.71,
+"door": 1.8,
+"balD": 1.22,
+"spiral": [
+2.9,
+7.37
+],
+"balBack": [
 [
 2.71,
 3.62
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-0.22,
-0.29,
-0.78,
-0.78
-],
-[
-8.62,
-0.29,
-0.78,
-0.78
 ]
 ]
 },
@@ -42260,43 +42247,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.973,
 "cd": 8.842,
-"w": 8.81,
-"d": 3.89,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 2.61,
+"w": 3.89,
+"d": 8.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.71,
+"door": 1.8,
+"balD": 1.22,
+"spiral": [
+1.06,
+7.37
+],
 "balBack": [
 [
-7.73,
-8.27
-]
-],
-"balLeft": [
-[
 2.3,
-3.21
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-8.52,
-3.69,
-0.98,
-0.81
-],
-[
-0.27,
-3.69,
-0.88,
-0.81
+3.22
 ]
 ]
 },
@@ -42306,25 +42274,26 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 8.4,
-"w": 8.81,
-"d": 3.59,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 2.61,
-"balLeft": [
+"w": 3.59,
+"d": 8.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.71,
+"door": 1.8,
+"balD": 1.22,
+"spiral": [
+2.53,
+7.37
+],
+"balBack": [
 [
 2.3,
 3.22
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true
+]
 },
 {
 "id": "C504",
@@ -42332,37 +42301,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.574,
 "cd": 8.876,
-"w": 8.81,
-"d": 4.5,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 2.61,
-"balLeft": [
+"w": 4.5,
+"d": 8.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.71,
+"door": 1.8,
+"balD": 1.22,
+"spiral": [
+3.45,
+7.37
+],
+"balBack": [
 [
 2.64,
-3.55
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-0.22,
-0.2,
-0.78,
-0.81
-],
-[
-8.62,
-0.2,
-0.78,
-0.81
+3.56
 ]
 ]
 },
@@ -42372,37 +42328,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.538,
 "cd": 8.876,
-"w": 8.81,
-"d": 4.5,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 2.61,
-"balLeft": [
+"w": 4.5,
+"d": 8.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.71,
+"door": 1.8,
+"balD": 1.22,
+"spiral": [
+3.45,
+7.37
+],
+"balBack": [
 [
 2.64,
-3.55
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-8.62,
-0.2,
-0.78,
-0.81
-],
-[
-0.22,
-0.2,
-0.78,
-0.81
+3.56
 ]
 ]
 },
@@ -42412,31 +42355,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 9.673,
-"w": 9.79,
-"d": 4.5,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 3.33,
-"balLeft": [
+"w": 4.5,
+"d": 9.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.98,
+"door": 1.8,
+"balD": 1.25,
+"spiral": [
+3.46,
+8.38
+],
+"balBack": [
 [
 2.64,
-3.55
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-9.55,
-0.2,
-0.88,
-0.81
+3.56
 ]
 ]
 },
@@ -42446,31 +42382,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 4.2,
 "cd": 9.673,
-"w": 9.79,
-"d": 4.5,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 3.33,
-"balLeft": [
+"w": 4.5,
+"d": 9.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.98,
+"door": 1.8,
+"balD": 1.25,
+"spiral": [
+3.46,
+8.38
+],
+"balBack": [
 [
 2.64,
-3.55
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-9.55,
-0.2,
-0.88,
-0.81
+3.56
 ]
 ]
 },
@@ -42480,31 +42409,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.937,
 "cd": 9.832,
-"w": 9.79,
-"d": 3.89,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 3.33,
-"balLeft": [
+"w": 3.89,
+"d": 9.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.98,
+"door": 1.8,
+"balD": 1.25,
+"spiral": [
+2.84,
+8.37
+],
+"balBack": [
 [
 2.64,
-3.55
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-9.45,
-0.2,
-1.08,
-0.81
+3.56
 ]
 ]
 },
@@ -42514,37 +42436,24 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.939,
 "cd": 9.832,
-"w": 9.79,
-"d": 3.89,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 3.33,
+"w": 3.89,
+"d": 9.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.98,
+"door": 1.8,
+"balD": 1.25,
+"spiral": [
+1.04,
+8.37
+],
 "balBack": [
 [
-8.74,
-9.25
-]
-],
-"balLeft": [
-[
 2.3,
-3.21
-]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"cols": [
-[
-9.4,
-3.69,
-1.19,
-0.81
+3.22
 ]
 ]
 },
@@ -42554,25 +42463,26 @@
 "dir": null,
 "sink": null,
 "blind": null,
-"terrace": true,
 "cw": 3.6,
 "cd": 9.673,
-"w": 9.79,
-"d": 3.59,
-"dimSrc": "도면 대조 확인",
-"updated": "2026-11-07",
-"doorX": 3.33,
-"balLeft": [
+"w": 3.59,
+"d": 9.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 5.98,
+"door": 1.8,
+"balD": 1.25,
+"spiral": [
+2.54,
+8.37
+],
+"balBack": [
 [
 2.34,
 3.25
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true
+]
 },
 {
 "id": "C601",
@@ -42582,26 +42492,27 @@
 "blind": null,
 "cw": 3.6,
 "cd": 6.664,
-"w": 6.81,
-"d": 3.89,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 2.9,
-"balLeft": [
+"w": 3.89,
+"d": 6.81,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 3.91,
+"door": 1.0,
+"balD": 1.22,
+"spiral": [
+1.21,
+5.57
+],
+"single": true,
+"terrace": true,
+"terrD": 1.96,
+"balBack": [
 [
 0.51,
 1.42
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"mirror": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C602",
@@ -42611,26 +42522,27 @@
 "blind": null,
 "cw": 3.6,
 "cd": 5.6,
-"w": 5.79,
-"d": 3.89,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 1.88,
-"balLeft": [
+"w": 3.89,
+"d": 5.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 3.91,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+2.69,
+4.56
+],
+"single": true,
+"terrace": true,
+"terrD": 1.96,
+"balBack": [
 [
 0.51,
 1.42
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"mirror": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C603",
@@ -42640,25 +42552,27 @@
 "blind": null,
 "cw": 3.6,
 "cd": 5.6,
-"w": 5.79,
-"d": 3.59,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 1.88,
-"balLeft": [
+"w": 3.59,
+"d": 5.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 3.91,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+2.38,
+4.56
+],
+"single": true,
+"terrace": true,
+"terrD": 1.96,
+"balBack": [
 [
 2.3,
 3.22
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C604",
@@ -42668,25 +42582,27 @@
 "blind": null,
 "cw": 4.2,
 "cd": 6.631,
-"w": 6.77,
-"d": 4.5,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 2.86,
-"balLeft": [
+"w": 4.5,
+"d": 6.77,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 3.91,
+"door": 1.0,
+"balD": 1.22,
+"spiral": [
+3.3,
+5.54
+],
+"single": true,
+"terrace": true,
+"terrD": 1.96,
+"balBack": [
 [
-2.77,
+2.78,
 3.69
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C605",
@@ -42696,25 +42612,27 @@
 "blind": null,
 "cw": 4.2,
 "cd": 5.6,
-"w": 5.79,
-"d": 4.5,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 1.88,
-"balLeft": [
+"w": 4.5,
+"d": 5.79,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 3.91,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+3.3,
+4.56
+],
+"single": true,
+"terrace": true,
+"terrD": 1.96,
+"balBack": [
 [
-2.77,
+2.78,
 3.69
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C606",
@@ -42724,25 +42642,27 @@
 "blind": null,
 "cw": 4.2,
 "cd": 8.084,
-"w": 8.2,
-"d": 4.5,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 5.32,
-"balLeft": [
+"w": 4.5,
+"d": 8.2,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 2.88,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+3.29,
+6.97
+],
+"single": true,
+"terrace": true,
+"terrD": 1.63,
+"balBack": [
 [
-2.77,
+2.78,
 3.69
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C607",
@@ -42752,25 +42672,27 @@
 "blind": null,
 "cw": 4.2,
 "cd": 7.2,
-"w": 7.18,
-"d": 4.5,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 4.3,
-"balLeft": [
+"w": 4.5,
+"d": 7.18,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 2.88,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+3.29,
+5.95
+],
+"single": true,
+"terrace": true,
+"terrD": 1.63,
+"balBack": [
 [
-2.77,
+2.78,
 3.69
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C608",
@@ -42780,25 +42702,27 @@
 "blind": null,
 "cw": 3.6,
 "cd": 8.084,
-"w": 8.2,
-"d": 3.89,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 5.32,
-"balLeft": [
+"w": 3.89,
+"d": 8.2,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 2.88,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+2.66,
+6.97
+],
+"single": true,
+"terrace": true,
+"terrD": 1.63,
+"balBack": [
 [
 2.47,
-3.38
+3.39
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C609",
@@ -42808,25 +42732,27 @@
 "blind": null,
 "cw": 3.6,
 "cd": 7.2,
-"w": 7.18,
-"d": 3.89,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 4.3,
-"balLeft": [
+"w": 3.89,
+"d": 7.18,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 2.88,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+1.22,
+5.95
+],
+"single": true,
+"terrace": true,
+"terrD": 1.63,
+"balBack": [
 [
 2.47,
-3.38
+3.39
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 },
 {
 "id": "C610",
@@ -42836,24 +42762,26 @@
 "blind": null,
 "cw": 3.6,
 "cd": 8.084,
-"w": 8.2,
-"d": 3.59,
-"dimSrc": "도면 대조 확인 — 6층_옆면_출입문_끝벽_통창",
-"updated": "2026-11-07",
-"doorX": 5.32,
-"balLeft": [
+"w": 3.59,
+"d": 8.2,
+"dimSrc": "도면 대조 확인 — 실내형 베란다 + 야외테라스, 출입문 긴 벽",
+"updated": "2026-11-09",
+"doorSide": "R",
+"doorAt": 2.88,
+"door": 1.0,
+"balD": 1.19,
+"spiral": [
+2.36,
+6.97
+],
+"single": true,
+"terrace": true,
+"terrD": 1.63,
+"balBack": [
 [
 2.34,
 3.25
 ]
-],
-"corner": [
-"",
-""
-],
-"sideBal": true,
-"openBal": true,
-"door": 1.0,
-"single": true
+]
 }
 ]
