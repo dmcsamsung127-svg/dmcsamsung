@@ -2,7 +2,7 @@
 import json, re, pathlib
 here = pathlib.Path(__file__).parent
 data = json.load(open(here/'units-all.json'))
-keep = ('id','area','w','d','corner','terrace','noWin','drive','updated','dimSrc','door','doorH','chamfer','doorSide','doorAt','noPark','parkN','cols','doorX','balBack','balLeft','parkX0','sideBal','stalls','parkGap','openBal','single','balD','terrD','spiral')
+keep = ('id','area','w','d','corner','terrace','noWin','drive','updated','dimSrc','door','doorH','chamfer','doorSide','doorAt','noPark','parkN','cols','doorX','balBack','balLeft','parkX0','sideBal','stalls','parkGap','openBal','single','balD','terrD','spiral','sideD','terrL','slant','terrD0','terrDW')
 slim = [{k: u[k] for k in keep if k in u} for u in data]
 p = here/'index.html'; s = p.read_text()
 s = re.sub(r'/\*ALL_START\*/.*?/\*ALL_END\*/', lambda m: '/*ALL_START*/' + json.dumps(slim, ensure_ascii=False, separators=(',', ':')) + '/*ALL_END*/', s, flags=re.S)
